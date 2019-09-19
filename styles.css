@@ -1,0 +1,44 @@
+.content {
+  min-height: cal(100vh-108px);
+}
+
+body {
+  font-family: 'DM Serif Display', 'Montserrat', 'Lato', sans-serif;
+  display: block;
+  margin: 8px;
+  margin: center;
+
+}
+
+header {
+  Color: #ffffff;
+  background-color: #6495ed;
+  text-align: center;
+  height: 100px;
+
+
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: bisque;
+  padding-left: 40px;
+}
+
+footer {
+  background-color: #6495ed;
+  text-align: center;
+  height: 130px;
+
+}
+
+#floatpic {
+  float: right;
+  padding-right: 100px;
+
+}
