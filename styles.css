@@ -1,12 +1,18 @@
-.content {
-  min-height: cal(100vh-108px);
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
 }
+
+
 
 body {
   font-family: 'DM Serif Display', 'Montserrat', 'Lato', sans-serif;
   display: block;
   margin: 8px;
-  margin: center;
+ 
 
 }
 
@@ -19,12 +25,19 @@ header {
 
 }
 
+img {
+  padding-top: 40px;
+  width: 200px;
+}
+
 h1 {
   padding-top: 30px;
 }
 
 main {
   padding-top: 20px;
+  height: 200px;
+  padding-top: 100px;
   padding-bottom: 20px;
   background-color: bisque;
   padding-left: 40px;
@@ -33,12 +46,30 @@ main {
 footer {
   background-color: #6495ed;
   text-align: center;
-  height: 130px;
-
+  height: 100px;
+  padding-top: 30px;
 }
 
 #floatpic {
   float: right;
   padding-right: 100px;
 
+}
+
+@media (min-width:1200px) {
+  main {
+    width: 100%;
+  }
+
+  nav {
+    width: 900px;
+  }
+
+  h2 {
+    width: 900px;
+  }
+
+  img {
+    padding-right: 400px;
+  }
 }
