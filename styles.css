@@ -9,13 +9,14 @@
 
 
 body {
-  font-family: 'DM Serif Display', 'Montserrat', 'Lato', sans-serif;
   display: block;
   margin: 8px;
  
 
 }
-
+header, h2{
+  font-family: 'DM Serif Display', 'Montserrat', 'Lato', sans-serif;
+}
 header {
   Color: #ffffff;
   background-color: #6495ed;
