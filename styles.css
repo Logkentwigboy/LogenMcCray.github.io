@@ -57,20 +57,4 @@ footer {
 
 }
 
-@media (min-width:1200px) {
-  main {
-    width: 100%;
-  }
 
-  nav {
-    width: 900px;
-  }
-
-  h2 {
-    width: 900px;
-  }
-
-  img {
-    padding-right: 400px;
-  }
-}
