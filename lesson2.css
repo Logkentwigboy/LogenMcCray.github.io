@@ -52,15 +52,20 @@ img {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 959px) {
     main {
+    
         width: 100%;
-        grid-template-columns: 400px 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+    .area1{
+        padding-top: 50px;
+    }
+    
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 640px) {
     main {
         display: block;
         padding: 20px;
