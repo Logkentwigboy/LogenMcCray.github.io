@@ -80,7 +80,7 @@ header nav li a:active {
 
 @media (max-width: 800px) {
   header {
-    height: 550px;
+    height: 630px;
     border: none;
   }
 }
