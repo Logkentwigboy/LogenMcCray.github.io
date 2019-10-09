@@ -1,0 +1,71 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 10%;
+}
+
+h1 {
+  color: yellow;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 45px;
+}
+
+/*--HERE IS THE CODE FOR THE HEADER-*/
+header nav {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border: 3px solid black;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+nav {
+  height: 100px;
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 20px;
+}
+
+nav a {
+  font-size: 30px;
+  color: black;
+}
+
+/*--HERE IS THE CODE FOR THE BODY-*/
+main {
+  display: block;
+}
+
+Section {
+  text-align: center;
+  padding-top: 200px;
+  display: block;
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=preston-4.css.map */
