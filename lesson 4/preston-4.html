@@ -12,6 +12,7 @@
         </style>
 <link rel="stylesheet" href="css/preston-4.css">
 <link rel="stylesheet" href="css/normalize.css">
+
 <title>Lesson 3 Weather website</title>
 </head>
 
@@ -23,16 +24,18 @@
 <img src="images/weathericon3.png" alt="third Icon">
 <h1>Weather Forcast</h1>
 <div id="navbox">
-    <nav>
-        <button onclick="togglemenu ()"></button>
-        <ul>
+    <nav class="nav-main">
+      <button onclick="toggleMenu()">&#9776;</button>
+       
+      <ul id="primaryNav" class="hide">
             <li> <a href="#">Preston</a></li>
-            <li> <a href="#">Soda Springs</a></li>
+            <li class="active"> <a href="#">Soda Springs</a></li>
             <li> <a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
+ 
 </div>
 <main>
     <section>
@@ -50,4 +53,5 @@
 </main>
     
 </body>
+<script src="js/togglemenu.js"></script>
 </html>

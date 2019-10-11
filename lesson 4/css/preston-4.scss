@@ -44,36 +44,73 @@
 header nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    border: 3px solid black;
+    border-bottom: 3px solid black;
     width: 100%;
-    background-color: antiquewhite;
-    @include mobile{
-      height: 320px;
-    }
   }
   nav{
-      height: 100px;
-  
-  }
-  nav ul{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      padding-top: 20px;
+    background-color: beige;
       @include mobile{
-        display: block;
-        padding-top:20px;
+      background-color: #ccc;
       }
     }
+  nav ul{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    height: 300px;
+    padding:0;
+    margin:0;
+    @include mobile{
+      display: block;
+    }
+
+  }
+  nav ul li a{
+      @include mobile{
+        display: block;
+        padding:.8rem 2%;
+      }
+    }
+    nav ul.hide{
+      @include mobile{
+        display: none;
+      }
+    }
+
   nav a{
       font-size: 30px;
-      color:black;
-  }
-  #navbox nav li{
+      color:#111;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+  nav a:hover{
     @include mobile{
-      padding-top:20px;
+      font-size:50px;
+      background-color:rgb(121, 121, 121);
+  }
+    }
+nav button{
+  display: none;
+  @include mobile{
+    display: block;
+  margin: .2rem 2%;
+  background-color: transparent;
+  border:none;
+  font-size: 30px;
+  color:#555;
+  cursor: pointer;
+  }
+}
+nav button:hover{
+  color:#ffff;
+}
+  nav ul li.active a{
+    @include mobile{
+    background-color: rgba(0,0,0,0.2); color:#fff;
     }
   }
-
+  
   /*--HERE IS THE CODE FOR THE BODY-*/
   body{
   }
