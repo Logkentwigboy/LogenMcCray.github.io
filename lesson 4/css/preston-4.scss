@@ -9,6 +9,14 @@
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
   }
+  $mobile:800px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+
+    
+}
   
   header {
     height: 300px;
@@ -19,6 +27,7 @@
     background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
     height: 100%;
     width: 100%;
+  
   }
   img{
     width: 10%;
@@ -38,18 +47,31 @@ header nav {
     border: 3px solid black;
     width: 100%;
     background-color: antiquewhite;
+    @include mobile{
+      height: 320px;
+    }
   }
   nav{
       height: 100px;
+  
   }
   nav ul{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       padding-top: 20px;
+      @include mobile{
+        display: block;
+        padding-top:20px;
+      }
     }
   nav a{
       font-size: 30px;
       color:black;
+  }
+  #navbox nav li{
+    @include mobile{
+      padding-top:20px;
+    }
   }
 
   /*--HERE IS THE CODE FOR THE BODY-*/

@@ -17,7 +17,6 @@ header {
   text-align: center;
   background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
   height: 400px;
-
 }
 
 header img {
@@ -34,7 +33,7 @@ header h1 {
 }
 
 header #navbox {
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 header nav {
@@ -44,21 +43,10 @@ header nav {
   width: 100%;
   background-color: antiquewhite;
 }
-@media (max-width: 600px) {
-  header nav {
-    border: none;
-  }
-  header #navbox {
-    padding-top: 0px;
-  }
-}
 
 @media (max-width: 800px) {
   header nav {
     border: none;
-  }
-  header #navbox {
-    padding-top: 30px;
   }
 }
 
@@ -104,7 +92,7 @@ main {
 
 @media (max-width: 800px) {
   main {
-    padding-top: 140px;
+    padding-top: 150px;
   }
 }
 
@@ -218,6 +206,4 @@ img[src$="sydspic.jpg"] {
 img[src$="scottspic.jpg"] {
   width: 50%;
 }
-
-
 /*# sourceMappingURL=lesson3style.css.map */

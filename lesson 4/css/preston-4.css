@@ -40,6 +40,12 @@ header nav {
   background-color: antiquewhite;
 }
 
+@media (max-width: 800px) {
+  header nav {
+    height: 320px;
+  }
+}
+
 nav {
   height: 100px;
 }
@@ -52,9 +58,22 @@ nav ul {
   padding-top: 20px;
 }
 
+@media (max-width: 800px) {
+  nav ul {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
 nav a {
   font-size: 30px;
   color: black;
+}
+
+@media (max-width: 800px) {
+  #navbox nav li {
+    padding-top: 20px;
+  }
 }
 
 /*--HERE IS THE CODE FOR THE BODY-*/
