@@ -19,16 +19,18 @@
 }
   
   header {
-    height: 300px;
     width: 100%;
     -ms-flex-line-pack: center;
         align-content: center;
     text-align: center;
     background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
-    height: 100%;
+    height: 50%;
     width: 100%;
+    @include mobile{
+      height: 600px;
+    }
+    }
   
-  }
   img{
     width: 10%;
   }
@@ -45,12 +47,16 @@ header nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     border-bottom: 3px solid black;
+    border-top: 3px solid black;
     width: 100%;
   }
+
   nav{
     background-color: beige;
+    width: 100%;
+    text-align: center;
       @include mobile{
-      background-color: #ccc;
+        background-color: transparent;
       }
     }
   nav ul{
@@ -58,7 +64,6 @@ header nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 20px;
-    height: 300px;
     padding:0;
     margin:0;
     @include mobile{
@@ -82,12 +87,15 @@ header nav {
       font-size: 30px;
       color:#111;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    &:hover{color:white;}
+    &:active{color:yellow}
+    &:focus{color:yellow;}
+    cursor: pointer;
     }
   nav a:hover{
     @include mobile{
       font-size:50px;
-      background-color:rgb(121, 121, 121);
+      background-color: rgba(0,0,0,0.2);
   }
     }
 nav button{
@@ -98,30 +106,52 @@ nav button{
   background-color: transparent;
   border:none;
   font-size: 30px;
-  color:#555;
   cursor: pointer;
   }
 }
 nav button:hover{
   color:#ffff;
+ 
 }
   nav ul li.active a{
-    @include mobile{
-    background-color: rgba(0,0,0,0.2); color:#fff;
-    }
+   
   }
   
   /*--HERE IS THE CODE FOR THE BODY-*/
   body{
   }
   main{
+    padding-top: 150px;
     display: block;
+    @include mobile{
+      padding-top: 0px;
+    }
     
   }
   Section{
     text-align: center;
-    padding-top: 200px;
+    height: 100%;
+    padding-top: 10px;
+    border:2px solid black;
+    padding-bottom: 20px;
     display: block;
-    background-color: aquamarine;;
-    
+    background-color:rgb(181, 232, 255);
+  }
+   /*--HERE IS THE CODE FOR THE return to portal button-*/
+   article{
+     font-size: 50px;
+     background-color:rgb(181, 232, 255);;
+   }
+   article ul li a{
+     color:yellow
+   }
+
+  
+  /*--HERE IS THE CODE FOR THE FOOTER-*/
+  
+  footer{
+    text-align: center;
+    padding:0;
+    margin:0;
+    background-color: rgb(35, 156, 255);
   }
