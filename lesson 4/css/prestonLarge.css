@@ -12,21 +12,22 @@
 header {
   background-color: #fff;
   padding: 5px 0;
-  padding-top: 50px;
   height: 100%;
   width: 100%;
+  padding-bottom: 30px;
   text-align: center;
   background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
 }
 
 header img {
-  width: 100px;
-  height: auto;
+  float:left;
+  height: 100px;
+  padding-left: 60px;
 }
 
 h1 {
   color: yellow;
-  font-size: 45px;
+  font-size: 80px;
 }
 
 /*--HERE IS THE CODE FOR THE HEADER-*/
@@ -36,6 +37,7 @@ header nav {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
   width: 100%;
+  padding-top:50px;
 }
 
 nav {
