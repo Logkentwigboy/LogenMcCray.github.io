@@ -9,35 +9,41 @@
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
   }
-  $mobile:800px;
+  $tablet:1200px;
+  @mixin tablet {
+    @media (min-width: #{$tablet}) {
+      @content;
+  }
+}
+$mobile:500px;
 @mixin mobile {
     @media (max-width: #{$mobile}) {
         @content;
-    }
-
-    
+    }    
 }
   
   header {
+    background-color: #fff;
+    padding: 5px 0;
+    padding-top:50px;
+    height:100%;
     width: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
     text-align: center;
     background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
-    height: 50%;
-    width: 100%;
+    @include tablet{
+    }
     @include mobile{
-      height: 600px;
-    }
-    }
-  
-  img{
-    width: 10%;
+      display: block;
+    }  
   }
+  
+  header img{
+    width: 100px;
+    height: auto;
+  }
+ 
   h1{
       color:yellow;
-      padding-bottom: 40px;
-      padding-top: 40px;
       font-size: 45px;
   }
   /*--HERE IS THE CODE FOR THE HEADER-*/
@@ -50,24 +56,32 @@ header nav {
     border-top: 3px solid black;
     width: 100%;
   }
-
   nav{
-    background-color: beige;
+    background-color:lightblue;
+    
+    height: 100%;
     width: 100%;
     text-align: center;
+    @include tablet{
+      background-color: beige;
+      height: 100px;
+      width: 100%;
+    }
       @include mobile{
         background-color: transparent;
       }
     }
   nav ul{
-   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 20px;
-    padding:0;
-    margin:0;
+    padding-left: 50px;
+    @include tablet{
+      padding-top: 20px;
+    }
     @include mobile{
       display: block;
+      padding: 0;
+        margin: 0;
     }
 
   }
@@ -78,12 +92,14 @@ header nav {
       }
     }
     nav ul.hide{
+      
       @include mobile{
         display: none;
       }
     }
 
   nav a{
+    
       font-size: 30px;
       color:#111;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -110,23 +126,19 @@ nav button{
   }
 }
 nav button:hover{
+   font-size: 50px;
   color:#ffff;
  
 }
-  nav ul li.active a{
-   
-  }
+
   
   /*--HERE IS THE CODE FOR THE BODY-*/
-  body{
-  }
   main{
-    padding-top: 150px;
-    display: block;
-    @include mobile{
-      padding-top: 0px;
-    }
-    
+   
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        }
   }
   Section{
     text-align: center;
@@ -137,13 +149,16 @@ nav button:hover{
     display: block;
     background-color:rgb(181, 232, 255);
   }
+
    /*--HERE IS THE CODE FOR THE return to portal button-*/
    article{
      font-size: 50px;
      background-color:rgb(181, 232, 255);;
-   }
+     text-align: center;
+    }
    article ul li a{
-     color:yellow
+     color:yellow;
+
    }
 
   
