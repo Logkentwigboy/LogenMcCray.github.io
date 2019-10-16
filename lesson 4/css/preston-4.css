@@ -9,8 +9,11 @@
   text-decoration-line: none;
 }
 
-body {
-  width: 80%;
+@media (max-width: 680px) {
+  body {
+    width: 80%;
+    background-color: rgba(173, 216, 230, 0.8);
+  }
 }
 
 header {

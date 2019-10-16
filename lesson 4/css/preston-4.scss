@@ -30,7 +30,10 @@ $mobile:680px;
 }
   
 body{
+  @include mobile{
   width: 80%;
+  background-color: rgba(173,216,230,0.8);
+  }
 }
   header {
 
