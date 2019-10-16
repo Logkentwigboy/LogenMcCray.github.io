@@ -9,6 +9,10 @@
   text-decoration-line: none;
 }
 
+body {
+  background-color: lightblue;
+}
+
 header {
   padding: 5px 0;
   padding-top: 50px;
