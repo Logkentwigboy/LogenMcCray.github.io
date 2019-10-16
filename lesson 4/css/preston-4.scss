@@ -275,7 +275,7 @@ nav button:hover{
   display: none;
   @include mobile{
   display: block;
-  padding-left: 30px;
+  
   margin:20px;
   }
 }
@@ -286,12 +286,7 @@ nav button:hover{
     font-size: 20px;
     background-color: rgba(232, 245, 47, 0.8);
   }
-#PrestonMap img{
-  @include mobile{
- width: 100%;
-  
-  }
-}
+
 
 
  
@@ -301,6 +296,9 @@ nav button:hover{
   text-align: left;
   padding: 20px;
   font-size: 25px;
+  @include mobile{
+    font-size: 18px;
+  }
 }
 .work{
   display: none;
@@ -308,7 +306,6 @@ nav button:hover{
 #contactbox{
   margin:20px;
   background-color: rgba(173,216,230,0.6);
-
  
 }
 #sectiontwo{

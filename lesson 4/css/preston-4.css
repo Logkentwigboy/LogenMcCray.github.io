@@ -342,7 +342,6 @@ span {
 @media (max-width: 680px) {
   #imageplaceholder {
     display: block;
-    padding-left: 30px;
     margin: 20px;
   }
 }
@@ -355,12 +354,6 @@ span {
   background-color: rgba(232, 245, 47, 0.8);
 }
 
-@media (max-width: 680px) {
-  #PrestonMap img {
-    width: 100%;
-  }
-}
-
 #contact {
   width: 80%;
   -webkit-box-sizing: border-box;
@@ -368,6 +361,12 @@ span {
   text-align: left;
   padding: 20px;
   font-size: 25px;
+}
+
+@media (max-width: 680px) {
+  #contact {
+    font-size: 18px;
+  }
 }
 
 .work {
