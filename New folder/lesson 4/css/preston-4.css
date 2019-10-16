@@ -1,0 +1,206 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+header {
+  background-color: #fff;
+  padding: 5px 0;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
+}
+
+@media (max-width: 769px) {
+  header {
+    display: block;
+  }
+}
+
+#headerstuff {
+  display: inline-block;
+  width: 50%;
+}
+
+#headerstuff img {
+  float: left;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 100px;
+}
+
+h1 {
+  color: yellow;
+  padding-top: 20px;
+  padding-right: 70px;
+  font-size: 45px;
+}
+
+/*--HERE IS THE CODE FOR THE HEADER-*/
+header nav {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  width: 100%;
+}
+
+nav {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  nav {
+    background-color: beige;
+    height: 100px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  nav {
+    background-color: transparent;
+  }
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 50px;
+}
+
+@media (min-width: 1200px) {
+  nav ul {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 769px) {
+  nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+  }
+}
+
+@media (max-width: 769px) {
+  nav ul.hide {
+    display: none;
+  }
+}
+
+nav a {
+  font-size: 30px;
+  color: #111;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:active {
+  color: yellow;
+}
+
+nav a:focus {
+  color: yellow;
+}
+
+@media (max-width: 769px) {
+  nav a:hover {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+nav button {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  nav button {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+nav button:hover {
+  font-size: 50px;
+  color: #ffff;
+}
+
+/*--HERE IS THE CODE FOR THE BODY-*/
+main {
+  background-color: #b5e8ff;
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+Section {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding-top: 10px;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  display: block;
+  background-color: #b5e8ff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-left: 30px;
+}
+
+article {
+  height: 300px;
+}
+
+/*--HERE IS THE CODE FOR THE return to portal button-*/
+/*--HERE IS THE CODE FOR THE FOOTER-*/
+footer {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #239cff;
+}
+/*# sourceMappingURL=preston-4.css.map */

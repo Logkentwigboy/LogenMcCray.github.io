@@ -1,0 +1,136 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+header {
+  background-color: #fff;
+  padding: 5px 0;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
+}
+
+header img {
+  float:left;
+  height: 100px;
+  padding-left: 60px;
+}
+
+h1 {
+  color: yellow;
+  font-size: 80px;
+}
+
+/*--HERE IS THE CODE FOR THE HEADER-*/
+header nav {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  width: 100%;
+  padding-top:50px;
+}
+
+nav {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 50px;
+}
+
+
+
+
+
+nav a {
+  font-size: 30px;
+  color: #111;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:active {
+  color: yellow;
+}
+
+nav a:focus {
+  color: yellow;
+}
+
+
+nav button {
+  display: none;
+}
+
+
+
+nav button:hover {
+  font-size: 50px;
+  color: #ffff;
+}
+
+/*--HERE IS THE CODE FOR THE BODY-*/
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 15px;
+}
+p{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+Section {
+  text-align: center;
+  height: 100%;
+  padding-top: 10px;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  display: block;
+  background-color: #b5e8ff;
+}
+
+/*--HERE IS THE CODE FOR THE return to portal button-*/
+article {
+  font-size: 50px;
+  background-color: #b5e8ff;
+  text-align: center;
+}
+
+article ul li a {
+  color: yellow;
+}
+
+/*--HERE IS THE CODE FOR THE FOOTER-*/
+footer {
+  width: 80%;
+  height: 50px;
+  padding-top: 30px;
+  align-content: center;
+  text-align: center;
+  background-color: #239cff;
+}
+/*# sourceMappingURL=preston-4.css.map */

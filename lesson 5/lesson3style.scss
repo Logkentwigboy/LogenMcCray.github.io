@@ -1,0 +1,180 @@
+* {
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    list-style: none;
+    text-decoration-line: none;
+  }
+$mobile:800px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+
+    
+}
+ $deskopwidth:100%;
+ $textcentered:center;
+
+
+
+ header{ 
+    width: $deskopwidth;
+    align-content: $textcentered;
+    text-align: center;
+    background: url('https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg');
+    height: 400px; 
+            img{
+                width: 90px;
+                padding-top: 40px;
+                padding-left:20px;
+                padding-right: 20px;
+            }
+
+            h1{
+                padding-top:20px;
+                font-size: 60px;
+                color:rgb(248, 240, 124);
+            }
+            #navbox{
+                padding-top: 100px;
+            }
+            
+            nav {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                border:3px solid black;
+                width:100%;
+                background-color: antiquewhite;
+                @include mobile{
+                    border:none;
+                }
+    
+            }
+        
+            nav li{
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                @include mobile{
+                    padding-bottom: 10px;
+                    float:right;
+                    width: 100%;
+                    display: block;
+                }
+                
+            }
+            nav li a{
+                color:black;
+                font-size: 30px;
+            
+                &:hover{
+                    color:white;
+                }
+                &:active{
+                    color:rgb(21, 134, 100);
+                    
+                }
+            }
+            @include mobile{
+               height: 630px;
+               border:none;
+            }
+        }
+
+main{
+    padding:20px;
+    background-color: rgb(181, 232, 255);
+    @include mobile{
+        padding-top: 150px;
+    }
+    article{
+        text-align: center;
+        border: 2px  solid black;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        
+    }
+    h2{
+        font-family:'Montseraat', sans-serif;
+        color:rgb(0, 0, 0);
+        padding-bottom: 20px;
+        padding-top:20px;
+        font-size: 20px;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color:#303030;
+        font-size: 15px;
+    }
+
+img[src$="normal.jpg"]{
+    width:100%;
+}
+section{
+    border: 2px  solid black;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    h2{
+        color:#000000;
+        padding-bottom: 20px;
+        padding-top:20px;
+        font-size: 30px;
+    }
+    p{
+        color:#303030;
+        font-size: 20px;
+    }
+}
+
+footer{
+    background-color: rgb(35, 156, 255);
+    text-align: center;
+    }
+ }
+footer{
+    background-color: rgb(35, 156, 255);
+    text-align: center;
+}
+
+#firstcolor{
+    p{color:white;}
+    padding:10px;
+    background-color:rgb(181, 232, 255);
+    height: 80px;
+}
+#secondcolor{
+    p{color:white;}
+    padding:20px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+#Thirdcolor{
+    p{color:white;}
+    background-color:  #303030; 
+    padding:20px;
+    height: 90px;
+}
+#Fourthcolor{
+    p{color:white;}
+    background-color: rgb(248, 240, 124); 
+    padding:20px;
+    height: 80px;
+}
+li{
+    font-size: 25px;
+    display: inline-block;
+    padding-left:40px;
+    text-align: center;
+}
+img[src$="sydspic.jpg"]{
+    width:50%;
+}
+img[src$="scottspic.jpg"]{
+    width:50%;
+}
