@@ -29,6 +29,7 @@ $mobile:680px;
     }    
 }
   
+
   header {
 
     padding: 5px 0;
@@ -36,8 +37,10 @@ $mobile:680px;
     height:100%;
     width: 100%;
     text-align: center;
-    background: url(https://get.pxhere.com/photo/nature-horizon-light-cloud-sky-sunlight-cloudy-air-atmosphere-photo-daytime-clear-cumulus-covered-blue-blue-sky-clouds-background-climate-blue-sky-clouds-meteorological-phenomenon-atmosphere-of-earth-639846.jpg);
-   
+    background-image: url(https://www.farmersalmanac.com/wp-content/uploads/2013/04/Cumulus-Clouds-i638401832.jpg);
+    @include mobile{
+      background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
+    }
   }
   #headerstuff{
     
@@ -261,7 +264,12 @@ nav button:hover{
      margin-top: 350px;
     }
   }
-
+#PrestonMap img{
+  @include mobile{
+  height: 200px;
+  
+  }
+}
 
 
  
@@ -278,6 +286,7 @@ nav button:hover{
 #contactbox{
   margin:20px;
   background-color: rgba(173,216,230,0.6);
+
  
 }
 #sectiontwo{
