@@ -336,8 +336,15 @@ span {
 }
 
 #imageplaceholder {
-  padding-left: 30px;
-  margin: 20px;
+  display: none;
+}
+
+@media (max-width: 680px) {
+  #imageplaceholder {
+    display: block;
+    padding-left: 30px;
+    margin: 20px;
+  }
 }
 
 #mobileReport {

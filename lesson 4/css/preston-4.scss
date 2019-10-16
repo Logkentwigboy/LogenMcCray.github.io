@@ -272,8 +272,12 @@ nav button:hover{
     overflow:hidden;
   }
 #imageplaceholder{
+  display: none;
+  @include mobile{
+  display: block;
   padding-left: 30px;
   margin:20px;
+  }
 }
   #mobileReport{
     display: block;
