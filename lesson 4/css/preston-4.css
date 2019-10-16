@@ -293,7 +293,7 @@ article span {
 
 @media (max-width: 680px) {
   #weathersum {
-    width: 300px;
+    width: 100%;
   }
 }
 
@@ -314,18 +314,19 @@ article span {
 @media (max-width: 680px) {
   #articlepPreston {
     position: absolute;
-    width: 400px;
-    margin-top: 350px;
+    width: 80%;
+    margin-top: 450px;
   }
 }
 
 @media (max-width: 680px) {
   #PrestonMap img {
-    height: 200px;
+    width: 80%;
   }
 }
 
 #contact {
+  width: 80%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;

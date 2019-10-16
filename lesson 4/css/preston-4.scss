@@ -243,7 +243,8 @@ nav button:hover{
     padding:20px;
    text-align: left;
    @include mobile{
-     width: 300px;
+     width:100%;
+    
    }
 
   }
@@ -260,13 +261,13 @@ nav button:hover{
     overflow:hidden;
     @include mobile{
       position: absolute;
-      width: 400px;
-     margin-top: 350px;
+      width:80%;
+     margin-top: 450px;
     }
   }
 #PrestonMap img{
   @include mobile{
-  height: 200px;
+ width: 80%;
   
   }
 }
@@ -274,6 +275,7 @@ nav button:hover{
 
  
 #contact{
+  width: 80%;
   box-sizing: border-box;
   text-align: left;
   padding: 20px;
