@@ -29,7 +29,9 @@ $mobile:680px;
     }    
 }
   
-
+body{
+  width: 80%;
+}
   header {
 
     padding: 5px 0;
@@ -261,7 +263,7 @@ nav button:hover{
     overflow:hidden;
     @include mobile{
       position: absolute;
-      width:80%;
+      width:60%;
      margin-top: 450px;
     }
   }
@@ -280,7 +282,6 @@ nav button:hover{
   text-align: left;
   padding: 20px;
   font-size: 25px;
-  background-color: rgba(173,216,230,0.6);
 }
 .work{
   display: none;
@@ -297,7 +298,7 @@ nav button:hover{
     display: block;
   }
   @include mobile{
-    margin-top: 350px;
+    margin-top: 400px;
   display: block;
   }
 }
