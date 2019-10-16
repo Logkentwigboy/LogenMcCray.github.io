@@ -331,6 +331,12 @@ article span {
   background-color: rgba(173, 216, 230, 0.6);
 }
 
+@media (max-width: 1200px) {
+  #sectiontwo {
+    display: block;
+  }
+}
+
 @media (max-width: 680px) {
   #sectiontwo {
     margin-top: 350px;

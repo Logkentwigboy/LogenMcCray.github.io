@@ -281,6 +281,9 @@ nav button:hover{
  
 }
 #sectiontwo{
+  @include tablet{
+    display: block;
+  }
   @include mobile{
     margin-top: 350px;
   display: block;
