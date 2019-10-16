@@ -333,6 +333,8 @@ article span {
 
 @media (max-width: 1200px) {
   #sectiontwo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
   }
 }

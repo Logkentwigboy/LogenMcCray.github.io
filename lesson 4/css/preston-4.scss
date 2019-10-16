@@ -282,6 +282,7 @@ nav button:hover{
 }
 #sectiontwo{
   @include tablet{
+    box-sizing: border-box;
     display: block;
   }
   @include mobile{
