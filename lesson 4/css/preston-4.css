@@ -9,13 +9,6 @@
   text-decoration-line: none;
 }
 
-@media (max-width: 680px) {
-  body {
-    width: 80%;
-    background-color: rgba(173, 216, 230, 0.8);
-  }
-}
-
 header {
   padding: 5px 0;
   padding-top: 50px;
