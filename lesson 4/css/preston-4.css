@@ -230,6 +230,20 @@ Section {
           box-sizing: border-box;
 }
 
+@media (max-width: 680px) {
+  Section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
 .nextweek {
   width: 100%;
   padding-top: 30px;
@@ -297,10 +311,20 @@ article span {
   }
 }
 
+span {
+  color: yellow;
+}
+
 .weather {
   background-color: rgba(173, 216, 230, 0.6);
   margin: 20px;
   padding: 20px;
+}
+
+@media (max-width: 680px) {
+  .weather {
+    display: block;
+  }
 }
 
 #articlepPreston {
@@ -311,17 +335,22 @@ article span {
   overflow: hidden;
 }
 
-@media (max-width: 680px) {
-  #articlepPreston {
-    position: absolute;
-    width: 60%;
-    margin-top: 450px;
-  }
+#imageplaceholder {
+  padding-left: 30px;
+  margin: 20px;
+}
+
+#mobileReport {
+  display: block;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(232, 245, 47, 0.8);
 }
 
 @media (max-width: 680px) {
   #PrestonMap img {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -353,8 +382,9 @@ article span {
 
 @media (max-width: 680px) {
   #sectiontwo {
-    margin-top: 400px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
