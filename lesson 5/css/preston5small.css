@@ -122,6 +122,6 @@
 }
 @media (max-width: 680px) {
   #PrestonMap img{
-    width: 90%;
+    display: none;
   }
 }
