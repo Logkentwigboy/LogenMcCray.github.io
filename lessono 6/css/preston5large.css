@@ -43,8 +43,7 @@ header {
 header img {
   width: 200px;
 }
-#heroimage img{
-}
+
 h1 {
   color: yellow;
   padding-top: 20px;
@@ -172,6 +171,10 @@ span {
   background-color: rgba(173, 216, 230, 0.6);
   margin: 20px;
   padding: 20px;
+
+}
+picture{
+  padding-left: 20px;
 }
 #articlepPreston {
   text-align: left;
