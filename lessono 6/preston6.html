@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here is the assigment for the homepage for 
+    Preston">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/preston5large.css">
+    <link rel="stylesheet" href="css/preston5medium.css">
+    <link rel="stylesheet" href="css/preston5small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
+    <script src="js/togglemenu.js"></script>
+    <script src="js/toggleMenu.1.js"></script>
+    <script>
+        body{
+         background: url("images/scrset/large.jpg")
+        }
+    </script>
+    <title>Website preston homepage</title>
+</head>
+
+<body>
+
+    <header>
+
+            <div id="headerstuff">
+            <img src="images/weathericon3.png" alt="third Icon">
+            <h1>Weather Forecast</h1>
+            <h4>For all your weather needs</h4>
+        </div>
+
+
+        <div id="navbox">
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li> <a href="#">Preston</a></li>
+                    <li class="active"> <a href="#">Soda Springs</a></li>
+                    <li> <a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="hiddenh2">Next Week Forcast</h2>
+        <div class="nextweek">
+            <!-- This is the box for next week weather and 
+                the light blue color-->
+            <div class="days">Monday
+                <div class="temp"> 30 F
+                    <!-- Here is where monday info is-->
+                    <br>
+                    <img src="images/rainicon.png" alt="small rainicon">
+                </div>
+            </div>
+            <div class="days">Tuesday
+                <!-- Here is where tuesday info is-->
+                <div class="temp"> 30 F
+                    <br>
+                    <img src="images/thnder.png" alt="Smallrain">
+                </div>
+
+
+            </div>
+            <div class="days">Wednesday
+                <!-- Here is Wednesday info is-->
+                <div class="temp"> 30 F
+                    <br>
+                    <img src="images/partlycloudy.png" alt="Sun and cloud">
+                </div>
+            </div>
+            <div class="days">Thursday
+                <!-- Here is Thursday info is-->
+                <div class="temp"> 30 F
+                    <br>
+                    <img src="images/snow.png" alt="snow icon">
+                </div>
+            </div>
+            <div class="days">Friday
+                <!-- Here is Friday info is-->
+                <div class="temp"> 30 F
+                    <br>
+                    <img src="images/sunny.png" alt="Sunny Icon">
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2>Preston</h2>
+        <picture class="heroimage">
+              <img src="images/cropped.jpg" alt="cropped"
+              srcset="images/small.jpg 1x, images/medium.jpg 2x, images/large.jpg 3x">
+            </picture>
+        <section> 
+                    <!-- This is the code for the first secont. The imported widget and the two articles. -->
+                <article>
+                <div id="widget">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/42d10n111d88/preston/" data-label_1="PRESTON"
+                    data-label_2="WEATHER" data-theme="orange" data-basecolor="#ffff00">PRESTON WEATHER</a>
+                </div>
+               <script>
+                    ! function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = 'https://weatherwidget.io/js/widget.min.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'weatherwidget-io-js');
+                </script>
+                <div id="articlepPreston">
+                    <h4>Weather Report</h4><!--The random text under the week report-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quas expedita recusandae, et
+                        voluptatem nesciunt placeat,
+                        sequi asperiores ex nam voluptates soluta? Cumque, quis modi?Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit.
+                        Provident, vitae? Ipsum, veniam nulla repellendus obcaecati laborum molestiae labore nisi
+                        quaerat eligendi reprehenderit,
+                        adipisci eum aliquam?</p>
+                        <div id="imageplaceholder">
+                    <img src="images/smallerportland.jpg" alt="Just a picture to match the wireframe">
+                    </div>
+                </div>
+                </article>
+                <div class="weather">
+                   
+                    <div id="weathersum">
+                        <h3>Weather Summary</h3>
+                        Currently:<span>Sunny</span>
+                        <br>
+                        High: <span>76°</span>
+                        <br>
+                        Wind Chill:<span>10°F</span>
+                        <br>
+                        Humidity:<span>69</span>
+                        <br>
+                        Wind Speed:<span>5mph</span>
+                    </div>
+                </div>
+      
+        </section>
+       
+        <section id="sectiontwo">
+               
+            <!--Section with the map and other text-->
+                <div id="PrestonMap">
+                    <img src="images/prestonmap.png" alt="preston map">
+                </div>
+                <div id="contactbox">
+                <div id="contact">
+                    <h2><u>Contact</u></h2>
+                    <br>
+                    <br>
+                    <p>Please email us at yourweatherservices.com</p>
+                    <br>
+                    <p>We are located right to your house</p>
+                    <br>
+                    <p>Check out our other infr on the other pages please</p>
+                    <br>
+                    <P>call: (208) 543-9283</P>
+                    </div>
+                </div>
+            
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
+            target="_blank">Byui Online Learning</a>
+        <br>
+        <p id="dateStamp"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("dateStamp").innerHTML = d;
+        </script>
+
+    </footer>
+</body>
+
+</html>
