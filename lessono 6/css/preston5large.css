@@ -159,19 +159,20 @@ article span {
   border: 3px solid black;
           box-sizing: border-box;
   font-size: 25px;
-  width: 100%;
   padding: 20px;
   text-align: left;
+  height: 200px;
 }
+
 span {
   color: yellow;
 }
 
 .weather {
   background-color: rgba(173, 216, 230, 0.6);
-  margin: 20px;
-  padding: 20px;
-
+  position: absolute;
+  height: 300px;
+  width: 40%;
 }
 picture{
   padding-left: 20px;

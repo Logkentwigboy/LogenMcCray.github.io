@@ -100,42 +100,40 @@
         <h2>Preston</h2>
         
           <section  class="heroimage">
-        <figure>
               <img src="images/small.jpg" alt="small" sizes="70vw"
                 srcset="images/small.jpg 500w,
                         images/medium.jpg 800w,
                         images/large.jpg 1200w
-                        ">
+                        "    
+              >
               <div class="weather">
-                   
-                    <div id="weathersum">
-                        <h3>Weather Summary</h3>
-                        Currently:<span>Sunny</span>
+                    <h3>Weather Summary</h3>
+                    Currently:<span>Sunny</span>
+                    <br>
+                    High: <span>76°</span>
+                    <br>
+                    Wind Chill:<span>10°F</span>
+                    <br>
+                    Wind Speed:<span>5mph</span>
+                    <br>
+                    <br>
+                       <!-- THE WINDCHILL JAVASCRIPT -->
+                <form action="" method=post name=windform>
+                        Wind Speed (MPH) =
+                        <input type=text name=wind value="" size=6>
                         <br>
-                        High: <span>76°</span>
                         <br>
-                        Wind Chill:<span>10°F</span>
-                        <br>
-                        Wind Speed:<span>5mph</span>
+                        Air Temperature (ºF) =
+                        <input type=text name=temp value="" size=6>
                         <br>
                         <br>
-                           <!-- THE WINDCHILL JAVASCRIPT -->
-                    <form action="" method=post name=windform>
-                            Wind Speed (MPH) =
-                            <input type=text name=wind value="" size=6>
-                            <br>
-                            <br>
-                            Air Temperature (ºF) =
-                            <input type=text name=temp value="" size=6>
-                            <br>
-                            <br>
-                            <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
-                            <input name=windchill type=text value="" size=10> º F
-                     </form>
-                     </div>
-                </div>
-                </figure>
-          </section>
+                        <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
+                        <input name=windchill type=text value="" size=10> º F
+                 </form>
+                 </div>
+            </div>
+              </section>
+             
         <section> 
                     <!-- This is the code for the first secont. The imported widget and the two articles. -->
                 <article>
