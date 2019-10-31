@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here we will have a responsive photo galler that will only load when yu scroll on the pictures">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/lesson7.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Lesson 7 photo gallery</title>
+</head>
+<body>    
+    <section>
+        <h1>Weather Gallery </h1>
+        <div class="gallery">
+            <div class="img">
+                 <img src="images/loading.gif" class="lazy" data-src="images/sunlight.jpg">
+                <figcaption>Sunlight</figcaption>    
+            </div>
+            <div class="img">
+                  <img src="images/loading.gif" class="lazy" data-src="images/cloudmountain.jpg">
+                  <figcaption>Overcast Mountians</figcaption>  
+            </div>
+            <div class="img">
+                 <img src="images/loading.gif" class="lazy" data-src="images/coldsnow.jpg">       
+                 <figcaption>Snowy conditions</figcaption>  
+             </div>
+            <div class="img">
+                <img src="images/loading.gif" class="lazy" data-src="images/dawncloudy.jpg"> 
+                <figcaption>Beautiful overcast</figcaption>   
+            </div>
+             <div class="img">
+                <img src="images/loading.gif" class="lazy" data-src="images/winter.jpg">                
+                <figcaption>Winter breeze</figcaption>  
+            </div>
+            <div class="img">
+              <img src="images/loading.gif" class="lazy" data-src="images/epicpic.jpg"> 
+              <figcaption>Mother nature</figcaption>  
+            </div>
+            <div class="img">
+                <img src="images/loading.gif" class="lazy" data-src="images/overcast.jpg"> 
+                <figcaption>Overcast</figcaption>  
+            </div>
+            <div class="img">
+                 <img src="images/loading.gif" class="lazy" data-src="images/thunder.jpg">
+                 <figcaption>Thunderclouds</figcaption>      
+            </div>
+            <div class="img">
+                   <img src="images/loading.gif" class="lazy" data-src="images/tornado.jpg">
+                   <figcaption>Tornado</figcaption>     
+             </div>
+            <div class="img">
+               <img src="images/loading.gif" class="lazy" data-src="images/sunset.jpg">
+               <figcaption>Sunset</figcaption>  
+            </div>
+        </div>
+    </section>
+
+<script src="lazyload/lazyload.js" defer></script>  
+
+</body>
+</html>
