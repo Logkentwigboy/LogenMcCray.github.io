@@ -38,11 +38,6 @@
         background-color: rgb(255, 255, 255);
     }
 }
-@media (max-width: 680px) {
-    header {
-      background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
-    }
-  }
   @media (max-width: 680px) {
     #headerstuff {
       width: 100%;
