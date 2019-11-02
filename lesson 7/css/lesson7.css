@@ -15,25 +15,210 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.img{
-    padding-top: 20px;
-}
+
 img{ 
-    border: 1px solid #BFBFBF;
-    box-shadow: 10px 10px 5px #aaaaaa;
     width: 80%;
 }
-img:hover{
+/* Here is all the picutre show backgrounds! */
+#img1{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img1:hover{
     width:90%;
-    border: 1px solid #BFBFBF;
-    background-color: white;
     box-shadow: 15px 15px 10px #aaaaaa;
 }
-body{
-    background-color: rgb(255, 255, 255);
+#img2{
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
+#img2:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img3{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img3:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img4{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img4:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img5{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img5:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img6{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img6:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img7{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img7:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img8{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img8:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img9{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img9:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+#img10{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#img10:hover{
+    width:90%;
+    box-shadow: 15px 15px 10px #aaaaaa;
+}
+/* ------------------------------------------- */
 figcaption{
     padding-top:10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
+@media (max-width: 2000px) {
+    nav {
+      background-color: wheat;
+      padding-top: 25px;
+      height: 60px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  body {
+    background-color: lightblue;
+  }
+  
+  header {
+    padding: 5px 0;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/cloudbackground.jpg);
+  }
+  #headerstuff {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #headerstuff img {
+    float: left;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  
+  header img {
+    width: 200px;
+  }
+  
+  h1 {
+    color: yellow;
+    padding-top: 20px;
+    padding-right: 70px;
+    font-size: 45px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: white;
+    float: left;
+    padding-left: 30px;
+  }
+  h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  header nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    width: 100%;
+  }
+  nav ul {
+  
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+  }
+  nav a {
+    font-size: 30px;
+    color: #111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:20px;
+  }
+  
+  nav a:active {
+    color: yellow;
+  }
+  
+  nav a:focus {
+    color: yellow;
+  }
+  nav button {
+    display: none;
+  }
+  nav button:hover {
+    font-size: 50px;
+    color: #ffff;
+  }
+  
+  #imageplaceholder {
+    display: none;
+  }
+  #mobileReport {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(232, 245, 47, 0.8);
+  }
+  
+  #contact {
+    width: 80%;
+            box-sizing: border-box;
+    text-align: left;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .work {
+    display: none;
+  }
+  
+  #contactbox {
+    margin: 20px;
+    background-color: rgba(173, 216, 230, 0.6);
+  }
+  footer {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #239cff;
+  }

@@ -11,55 +11,82 @@
     <link rel="stylesheet" href="css/lesson7.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="togglemenu.js"></script>
     <title>Lesson 7 photo gallery</title>
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
 </head>
-<body>    
-    <section>
+<header>
+    <header>
+
+        <div id="headerstuff">
+        <img src="images/weathericon3.png" alt="third Icon">
+        <h1>Weather Forecast</h1>
+        <h4>For all your weather needs</h4>
+    </div>
+
+
+    <div id="navbox">
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li> <a href="https://logkentwigboy.github.io/lessono%206/preston6.html">Preston</a></li>
+                <li class="active"> <a href="#">Soda Springs</a></li>
+                <li> <a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="../lesson%25207/lesson7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</header>
+<body> 
+    <main>
         <h1>Weather Gallery </h1>
+    <section>
         <div class="gallery">
-            <div class="img">
-                 <img src="images/loading.gif" class="lazy" data-src="images/sunlight.jpg">
+            <div>
+                 <img  id="img1" src="images/loading.gif" class="lazy" data-src="images/sunlight.jpg">
                 <figcaption>Sunlight</figcaption>    
             </div>
-            <div class="img">
-                  <img src="images/loading.gif" class="lazy" data-src="images/cloudmountain.jpg">
+            <div>
+                  <img id="img2" src="images/loading.gif" class="lazy" data-src="images/cloudmountain.jpg">
                   <figcaption>Overcast Mountians</figcaption>  
             </div>
-            <div class="img">
-                 <img src="images/loading.gif" class="lazy" data-src="images/coldsnow.jpg">       
+            <div>
+                 <img id="img3" src="images/loading.gif" class="lazy" data-src="images/coldsnow.jpg">       
                  <figcaption>Snowy conditions</figcaption>  
              </div>
-            <div class="img">
-                <img src="images/loading.gif" class="lazy" data-src="images/dawncloudy.jpg"> 
+            <div>
+                <img id="img4" src="images/loading.gif" class="lazy" data-src="images/dawncloudy.jpg"> 
                 <figcaption>Beautiful overcast</figcaption>   
             </div>
-             <div class="img">
-                <img src="images/loading.gif" class="lazy" data-src="images/winter.jpg">                
+             <div>
+                <img id="img5" src="images/loading.gif" class="lazy" data-src="images/winter.jpg">                
                 <figcaption>Winter breeze</figcaption>  
             </div>
-            <div class="img">
-              <img src="images/loading.gif" class="lazy" data-src="images/epicpic.jpg"> 
+            <div>
+              <img id="img6" src="images/loading.gif" class="lazy" data-src="images/epicpic.jpg"> 
               <figcaption>Mother nature</figcaption>  
             </div>
-            <div class="img">
-                <img src="images/loading.gif" class="lazy" data-src="images/overcast.jpg"> 
+            <div>
+                <img id="img7" src="images/loading.gif" class="lazy" data-src="images/overcast.jpg"> 
                 <figcaption>Overcast</figcaption>  
             </div>
-            <div class="img">
-                 <img src="images/loading.gif" class="lazy" data-src="images/thunder.jpg">
+            <div>
+                 <img id="img8" src="images/loading.gif" class="lazy" data-src="images/thunder.jpg">
                  <figcaption>Thunderclouds</figcaption>      
             </div>
-            <div class="img">
-                   <img src="images/loading.gif" class="lazy" data-src="images/tornado.jpg">
-                   <figcaption>Tornado</figcaption>     
+            <div>
+                 <img id="img9" src="images/loading.gif" class="lazy" data-src="images/tornado.jpg">
+               <figcaption>Tornado</figcaption>     
              </div>
-            <div class="img">
-               <img src="images/loading.gif" class="lazy" data-src="images/sunset.jpg">
+            <div>
+               <img id="img10" src="images/loading.gif" class="lazy" data-src="images/sunset.jpg">
                <figcaption>Sunset</figcaption>  
             </div>
         </div>
     </section>
-
+</main>
 <script src="lazyload/lazyload.js" defer></script>  
 
 </body>
