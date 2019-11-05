@@ -18,10 +18,9 @@ fieldset{
 }
 body{
     margin: 0 auto;
-    background-image: url(images/mountainbackgroung.jpg);
 }
 main{
-background-image: url(/epicpic.jpg);
+background-image: url(epicpic.jpg);
 background-size: cover;
 }
 form{
@@ -131,7 +130,7 @@ input{
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: url(/images/bluesky.jpg);
+    background-image: url(images/bluesky.jpg);
     background-size: cover;
   }
   #headerstuff {
