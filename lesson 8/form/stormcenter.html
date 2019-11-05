@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here is the assigment for the homepage for 
+    Preston">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/preston5large.css">
+    <link rel="stylesheet" href="css/preston5medium.css">
+    <link rel="stylesheet" href="css/preston5small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
+    <script src="js/togglemenu.js"></script>
+    <script src="js/toggleMenu.1.js"></script>
+    <title>Website preston homepage</title>
+</head>
+
+<body>
+
+    <header>
+
+            <div id="headerstuff">
+            <img src="images/weathericon3.png" alt="third Icon">
+            <h1>Weather Forecast</h1>
+            <h4>For all your weather needs</h4>
+        </div>
+
+
+        <div id="navbox">
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li> <a href="#">Preston</a></li>
+                    <li class="active"> <a href="#">Soda Springs</a></li>
+                    <li> <a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="https://logkentwigboy.github.io/lesson%207/lesson7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <body>
+            <form>
+                <fieldset>
+                    <legend>Your Information</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Name Name* <input type="text" name="lname" required></label>
+                        <label>Phone <input type="tel" name="phone" required></label>
+                        <label>Email* <input type="email" name="email" placeholder="Byui@gmail" required></label>
+                        <label>Website <input type="url" name="url" placeholder="http://"></label>
+                        <label>Zip Code <input id="zip" name="zip" type="number" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Weather Information</legend>
+                    <label>Storm date<input type="date" name="bday"></label>
+                    <label>Storm Type</label>
+                    <select id="stormlist">
+                        <option value="1">choose one</option>
+                        <option value="2">Hail</option>
+                        <option value="3">Snow</option>
+                        <option value="4">Rain</option>
+                        <option value="5">Wind</option>
+                        <option value="6">Tornado</option>
+                    </select>
+                    <div class="slidecontainer">
+                       <labeL> <p>Storm Itensity: <span id="demo"></span></p>
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                        </labeL>
+                    </div>
+                </fieldset>
+            </form>      
+              <script>
+              var slider = document.getElementById("myRange");
+              var output = document.getElementById("demo");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
+              </script>
+    </main>
+    <footer>
+        &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
+            target="_blank">Byui Online Learning</a>
+        <br>
+        <p id="dateStamp"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("dateStamp").innerHTML = d;
+        </script>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Franklin Gothic Medium'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
