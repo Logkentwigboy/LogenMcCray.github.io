@@ -51,7 +51,7 @@
                         <label>Phone    <input id="phone" type="tel" name="phone" required></label>
                         <label>Email* <input id="email" type="email" name="email" placeholder="Byui@gmail" required></label>
                         <label>Website <input id="website" type="url" name="url" placeholder="http://"></label>
-                        <label>Zip Code <input id="zipcode" id="zip" name="zip" type="number" required></label>
+                        <label>Zip Code <input id="zipcode" class="zip" name="zip" type="number" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Weather Information</legend>
@@ -67,9 +67,9 @@
                     </select>
                     </label>
                     <div class="slidecontainer">
-                       <labeL> <p>Storm Itensity: <span id="demo"></span></p>
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
-                        </labeL>
+                     <label>Itensity </label> <span id="demo"></span>
+                    <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+            
                     </div>
                     <label>Where is the Storm?
                     <select id="stormregion">
@@ -91,11 +91,10 @@
             </form>
             <div class="comment">
                     <label>Make a comment!</label>
-                    <textarea id="title" type="text "rows="10" cols="60" onkeyup="Allow()" placeholder="Please write your name with your comment! . . ."></textarea>
+                    <textarea id="title" rows="10" cols="60" onkeyup="Allow()" placeholder="Please write your name with your comment! . . ."></textarea>
                 <input type="submit" value="Post Your Comment!" onclick="insert()"/>
                 </div>
                 <div id="display"></div>
-                </div>  
     </main>
     
     <footer>
@@ -107,7 +106,7 @@
             var d = new Date();
             document.getElementById("dateStamp").innerHTML = d;
         </script>
-          <script type="text/javascript">
+          <script>
         function getwords(){
         text = words.value;
         document.getElementById("para").innerHTML = text
@@ -145,7 +144,7 @@
                 }
                 </script>
                 <!--User Comment section!-->
-     <script type="text/javascript">
+     <script>
         var titles = [];
         var titleInput = document.getElementById("title");
         var messageBox = document.getElementById("display");
