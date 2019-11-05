@@ -30,7 +30,8 @@ form{
   background-color: transparent;
 }
 legend{
-    color: white;
+  text-align: center;
+    color: yellow;
     font-size: 35px;
     padding-bottom: 20px;
 }
@@ -49,6 +50,10 @@ input{
     height: 35px;
     border-radius: 20px;
 }
+#dangerlevel{
+  width: 80%;
+  border: 1px solid burlywood;
+}
 #phone{
   margin-left: 80px;
 }
@@ -60,6 +65,27 @@ input{
 }
 #zipcode{
   margin-left: 50px;
+}
+.comment{
+  max-width: 500px;
+  margin:0 auto;
+}
+#display{
+  text-align:left;
+  border:1px solid rgb(180, 180, 180);
+  max-width: 500px;
+  margin:0 auto;
+  color: white;
+  font-size: 20px;
+}
+#stormlist{
+  background-color:#bbbbbb;
+  border-radius: 20px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 /* Here is the slider code*/
 
