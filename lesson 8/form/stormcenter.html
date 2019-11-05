@@ -10,13 +10,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
     </style>
-    <link rel="stylesheet" href="css/preston5large.css">
-    <link rel="stylesheet" href="css/preston5medium.css">
-    <link rel="stylesheet" href="css/preston5small.css">
+    <link rel="stylesheet" href="stormcenter.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
-    <script src="js/togglemenu.js"></script>
-    <script src="js/toggleMenu.1.js"></script>
+ 
     <title>Website preston homepage</title>
 </head>
 
@@ -25,7 +22,7 @@
     <header>
 
             <div id="headerstuff">
-            <img src="images/weathericon3.png" alt="third Icon">
+            <img src="../images/weathericon3.png" alt="third Icon">
             <h1>Weather Forecast</h1>
             <h4>For all your weather needs</h4>
         </div>
@@ -35,31 +32,31 @@
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
-                    <li> <a href="#">Preston</a></li>
+                    <li> <a href="https://logkentwigboy.github.io/lessono%206/preston6.html">Preston</a></li>
                     <li class="active"> <a href="#">Soda Springs</a></li>
                     <li> <a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="/stormcenter.html">Storm Center</a></li>
                     <li><a href="https://logkentwigboy.github.io/lesson%207/lesson7.html">Gallery</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <body>
-            <form>
+            <form method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Your Information</legend>
                         <label>First Name* <input type="text" name="fname" required></label>
-                        <label>Name Name* <input type="text" name="lname" required></label>
-                        <label>Phone <input type="tel" name="phone" required></label>
-                        <label>Email* <input type="email" name="email" placeholder="Byui@gmail" required></label>
-                        <label>Website <input type="url" name="url" placeholder="http://"></label>
-                        <label>Zip Code <input id="zip" name="zip" type="number" required></label>
+                        <label>Last Name* <input type="text" name="lname" required></label>
+                        <label>Phone    <input id="phone" type="tel" name="phone" required></label>
+                        <label>Email* <input id="email" type="email" name="email" placeholder="Byui@gmail" required></label>
+                        <label>Website <input id="website" type="url" name="url" placeholder="http://"></label>
+                        <label>Zip Code <input id="zipcode" id="zip" name="zip" type="number" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Weather Information</legend>
                     <label>Storm date<input type="date" name="bday"></label>
-                    <label>Storm Type</label>
+                    <label>Storm Type
                     <select id="stormlist">
                         <option value="1">choose one</option>
                         <option value="2">Hail</option>
@@ -68,22 +65,35 @@
                         <option value="5">Wind</option>
                         <option value="6">Tornado</option>
                     </select>
+                    </label>
                     <div class="slidecontainer">
                        <labeL> <p>Storm Itensity: <span id="demo"></span></p>
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
                         </labeL>
                     </div>
+                    <label>Where is the Storm?
+                    <select id="stormregion">
+                        <option value="1">Select Region</option>
+                        <option value="2">Preston</option>
+                        <option value="3">Sugar City</option>
+                        <option value="4">Fish Haven</option>
+                    </select>
+                    </label>
+                    <div id="dangerlevel">
+                    <label>Danger level</label><br>
+                        <input type="radio" name="Danger" value="yes"> Yes<br>
+                        <input type="radio" name="Danger" value="maybe"> Maybe<br>
+                        <input type="radio" name="Danger" value="no">No <br>
+                    </div>
+                    <br>
+                    <div id="makecomment">
+                        <label>Make a comment!</label>
+                        <textarea id="words" rows="10" cols="50">Enter comment</textarea>
+                        <input type="button" onclick="getwords()" value="Enter" />
+                    </div>
+                    <input type="submit" value="How are you doing!" class="submitBtn">
                 </fieldset>
             </form>      
-              <script>
-              var slider = document.getElementById("myRange");
-              var output = document.getElementById("demo");
-              output.innerHTML = slider.value;
-              
-              slider.oninput = function() {
-                output.innerHTML = this.value;
-              }
-              </script>
     </main>
     <footer>
         &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
@@ -94,7 +104,13 @@
             var d = new Date();
             document.getElementById("dateStamp").innerHTML = d;
         </script>
-
+    <script type="text/javascript">
+        function getwords(){
+        text = words.value;
+        document.getElementById("para").innerHTML = text
+        document.getElementById("words").innerHTML = "enter"
+        }
+        </script>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -105,7 +121,23 @@
                 ]
             }
         });
+        var slider = document.getElementById("myRange");
+              var output = document.getElementById("demo");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
     </script>
+             <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
 </body>
 
 </html>

@@ -1,45 +1,75 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+ 
+}
+
 fieldset{
+
     border:none;
     margin-bottom: 30px;
     width: 100%;
    display:grid;
-   grid-template-rows: 1fr;
    background-color: transparent;
 }
 body{
-    background-size: cover;
-    background-repeat: no-repeat;    
-    background-image: url(../images/epicpic.jpg);
-    padding-top: 30px;
-    max-width: 500px;
     margin: 0 auto;
+    background-color: #239cff;
 }
-
-
+main{
+background-image: url(/epicpic.jpg);
+background-size: cover;
+}
+form{
+  position: relative;
+  max-width: 500px;
+  background-color: transparent;
+}
 legend{
     color: white;
     font-size: 35px;
     padding-bottom: 20px;
 }
+
 label{
-    font-size: 20px;
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-size: 1.5em;
     color: white;
     padding-bottom: 15px;
 }
 input{
     margin-left: 25px;
-    padding-left: 40px;
+    padding-left: 10px;
     height: 35px;
     border-radius: 20px;
 }
+#phone{
+  margin-left: 80px;
+}
+#email{
+  margin-left: 70px;
+}
+#website{
+  margin-left: 65px;
+}
+#zipcode{
+  margin-left: 50px;
+}
 /* Here is the slider code*/
+
 .slidecontainer {
-    width: 100%;
+  width: 100%;
   }
   
   .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 80%;
     height: 25px;
     background: #d3d3d3;
     outline: none;
@@ -59,4 +89,260 @@ input{
     background: rgb(78, 78, 78);
     cursor: pointer;
   }
- 
+  /* Here is the header css*/
+  @media (max-width: 2000px) {
+    nav {
+      background-color: wheat;
+      padding-top: 25px;
+      height: 60px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  header {
+    padding: 5px 0;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url(/images/bluesky.jpg);
+    background-size: cover;
+  }
+  #headerstuff {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #headerstuff img {
+    float: left;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  
+  header img {
+    width: 200px;
+  }
+  
+  h1 {
+    color: yellow;
+    padding-top: 20px;
+    padding-right: 70px;
+    font-size: 45px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: white;
+    float: left;
+    padding-left: 30px;
+  }
+  h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  header nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    width: 100%;
+  }
+  nav ul {
+  
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+  }
+  nav a {
+    font-size: 30px;
+    color: #111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:20px;
+  }
+  
+  nav a:active {
+    color: yellow;
+  }
+  
+  nav a:focus {
+    color: yellow;
+  }
+  nav button {
+    display: none;
+  }
+  nav button:hover {
+    font-size: 50px;
+    color: #ffff;
+  }
+   /* Here is the footer css*/
+
+ footer {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #239cff;
+}
+@media (max-width: 1200px) {
+  #headerstuff {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    background-color: lightblue;
+    height: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  #sectiontwo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+  }
+}
+@media (max-width: 1200px){
+  nav a:hover{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* small form*/
+@media (max-width: 680px) {
+  header {
+    background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
+  }
+}
+@media (max-width: 680px) {
+  #headerstuff {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  header img {
+    width: 100px;
+  }
+}
+@media (max-width: 680px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 680px) {
+  nav {
+    background-color: transparent;
+    height: 100%;
+  }
+}
+@media (max-width: 680px) {
+  nav ul {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  nav ul.hide {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  nav a {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav a:hover {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 680px) {
+  nav button {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 680px) {
+  #widget {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  Section {
+   
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media (max-width: 680px) {
+  .nextweek {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .hiddenh2 {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  #weathersum {
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 680px) {
+  .weather {
+    position: relative;
+    padding-bottom: 80px;
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  #imageplaceholder{
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  #contact {
+    font-size: 18px;
+  }
+}
+@media (max-width: 680px) {
+  #sectiontwo {
+    display: flex;
+  }
+}
+@media (max-width: 680px) {
+  #PrestonMap img{
+    display: none;
+  }
+}
