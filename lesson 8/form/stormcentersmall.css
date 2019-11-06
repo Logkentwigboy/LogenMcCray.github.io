@@ -1,4 +1,8 @@
 @media (max-width: 680px) {
+  form{width: 300px;
+    display: inline-block;
+
+  }
     #primaryNav{
       margin: 0 auto;
     }
@@ -59,6 +63,7 @@
       display: flex;
     }
     #title{
+      margin-left: 15px;
       width: 300px;
     }
   }
