@@ -11,6 +11,8 @@
         @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
     </style>
     <link rel="stylesheet" href="stormcenter.css">
+    <link rel="stylesheet" href="stormcentermedium.css">
+    <link rel="stylesheet" href="stormcentersmall.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
  
@@ -116,7 +118,10 @@
         
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-   
+   <script>
+   function toggleMenu() {
+   document.getElementById("primaryNav").classList.toggle("hide");
+}</script>
     <!--The slider Javascript-->
     <script>
         WebFont.load({
