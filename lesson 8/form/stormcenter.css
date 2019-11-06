@@ -7,7 +7,10 @@
   list-style: none;
  
 }
-
+input:required{
+  border-radius: 10px;
+  border-left: #239cff solid 6px;
+}
 fieldset{
 
     border:none;
@@ -55,16 +58,16 @@ input{
   border: 1px solid burlywood;
 }
 #phone{
-  margin-left: 80px;
+  margin-left: 70px;
 }
 #email{
   margin-left: 70px;
 }
 #website{
-  margin-left: 65px;
+  margin-left: 60px;
 }
 #zipcode{
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .comment{
   box-sizing: content-box;
@@ -79,14 +82,20 @@ input{
   color: white;
   font-size: 20px;
 }
-#stormlist{
-  background-color:#bbbbbb;
+#stormlist, #stormregion{
+  background-color: #239cff;
   border-radius: 20px;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+}
+.submitBtn{
+  background-color: wheat;
+  height: 40px;
+  font-size: 30px;
+  margin: 0 auto;
 }
 /* Here is the slider code*/
 

@@ -50,10 +50,10 @@
                     <legend>Your Information</legend>
                         <label>First Name* <input type="text" name="fname" required></label>
                         <label>Last Name* <input type="text" name="lname" required></label>
-                        <label>Phone    <input id="phone" type="tel" name="phone" required></label>
+                        <label>Phone*   <input id="phone" type="tel" name="phone" required></label>
                         <label>Email* <input id="email" type="email" name="email" placeholder="Byui@gmail" required></label>
                         <label>Website <input id="website" type="url" name="url" placeholder="http://"></label>
-                        <label>Zip Code <input id="zipcode" class="zip" name="zip" type="number" required></label>
+                        <label>Zip Code* <input id="zipcode" class="zip" name="zip" type="number" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Weather Information</legend>
@@ -69,10 +69,12 @@
                     </select>
                     </label>
                     <div class="slidecontainer">
-                     <label>Itensity </label> <span id="demo"></span>
+                     <label>Itensity  <span id="demo"></span>
                     <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
-            
+                        </label>
                     </div>
+                    <br>
+                    <br>
                     <label>Where is the Storm?
                     <select id="stormregion">
                         <option value="1">Select Region</option>
@@ -81,6 +83,7 @@
                         <option value="4">Fish Haven</option>
                     </select>
                     </label>
+                    <br>
                     <div id="dangerlevel">
                     <label>Danger level</label><br>
                         <input type="radio" name="Danger" value="yes"> Yes<br>
