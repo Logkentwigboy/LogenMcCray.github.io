@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here is the assigment for the homepage for 
+    Preston">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="stormcenter.css">
+    <link rel="stylesheet" href="stormcentermedium.css">
+    <link rel="stylesheet" href="stormcentersmall.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
+ 
+    <title>Website preston homepage</title>
+</head>
+
+<body>
+
+    <header>
+
+            <div id="headerstuff">
+            <img src="images/weathericon3.png" alt="third Icon">
+            <h1>Weather Forecast</h1>
+            <h4>For all your weather needs</h4>
+        </div>
+
+
+        <div id="navbox">
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li> <a href="https://logkentwigboy.github.io/lessono%206/preston6.html">Preston</a></li>
+                    <li class="active"> <a href="#">Soda Springs</a></li>
+                    <li> <a href="#">Fish Haven</a></li>
+                    <li><a href="/stormcenter.html">Storm Center</a></li>
+                    <li><a href="https://logkentwigboy.github.io/lesson%207/lesson7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Your Information</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" required></label>
+                        <label>Phone    <input id="phone" type="tel" name="phone" required></label>
+                        <label>Email* <input id="email" type="email" name="email" placeholder="Byui@gmail" required></label>
+                        <label>Website <input id="website" type="url" name="url" placeholder="http://"></label>
+                        <label>Zip Code <input id="zipcode" class="zip" name="zip" type="number" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Weather Information</legend>
+                    <label>Storm date<input type="date" name="bday"></label>
+                    <label>Storm Type
+                    <select id="stormlist">
+                        <option value="1">choose one</option>
+                        <option value="2">Hail</option>
+                        <option value="3">Snow</option>
+                        <option value="4">Rain</option>
+                        <option value="5">Wind</option>
+                        <option value="6">Tornado</option>
+                    </select>
+                    </label>
+                    <div class="slidecontainer">
+                     <label>Itensity </label> <span id="demo"></span>
+                    <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+            
+                    </div>
+                    <label>Where is the Storm?
+                    <select id="stormregion">
+                        <option value="1">Select Region</option>
+                        <option value="2">Preston</option>
+                        <option value="3">Sugar City</option>
+                        <option value="4">Fish Haven</option>
+                    </select>
+                    </label>
+                    <div id="dangerlevel">
+                    <label>Danger level</label><br>
+                        <input type="radio" name="Danger" value="yes"> Yes<br>
+                        <input type="radio" name="Danger" value="maybe"> Maybe<br>
+                        <input type="radio" name="Danger" value="no">No <br>
+                    </div>
+                    <br>
+                    <input type="submit" value="Submit Your Input!" class="submitBtn">
+                </fieldset>
+            </form>
+            <div class="comment">
+                    <label>Make a comment!</label>
+                    <textarea id="title" rows="10" cols="60" onkeyup="Allow()" placeholder="Please write your name with your comment! . . ."></textarea>
+                <input type="submit" value="Post Your Comment!" onclick="insert()"/>
+                </div>
+                <div id="display"></div>
+    </main>
+    
+    <footer>
+        &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
+            target="_blank">Byui Online Learning</a>
+        <br>
+        <p id="dateStamp"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("dateStamp").innerHTML = d;
+        </script>
+          <script>
+        function getwords(){
+        text = words.value;
+        document.getElementById("para").innerHTML = text
+        document.getElementById("words").innerHTML = "enter"
+        }
+        </script>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script>
+   function toggleMenu() {
+   document.getElementById("primaryNav").classList.toggle("hide");
+}</script>
+    <!--The slider Javascript-->
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Franklin Gothic Medium'
+                ]
+            }
+        });
+        var slider = document.getElementById("myRange");
+              var output = document.getElementById("demo");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
+    </script>
+             <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+                <!--User Comment section!-->
+     <script>
+        var titles = [];
+        var titleInput = document.getElementById("title");
+        var messageBox = document.getElementById("display");
+        function Allow()
+        {
+        if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+        {
+        user.title.value="";
+        alert("Please Enter only alphabets");
+        }
+        window.location.reload()
+        }
+        function insert () {
+        titles.push(titleInput.value);
+        clearAndShow();
+        }
+        function clearAndShow ()
+        {
+        titleInput.value = "";
+        messageBox.innerHTML = "";
+        messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+        }
+        </script>  
+</body>
+
+</html>

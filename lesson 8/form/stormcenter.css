@@ -21,7 +21,6 @@ fieldset{
 }
 body{
     margin: 0 auto;
-    background-image: url(images/mountainbackgroung.jpg);
 }
 main{
 background-image: url(epicpic.jpg);
@@ -54,7 +53,11 @@ input{
     border-radius: 20px;
 }
 #dangerlevel{
+  font-style: italic;
+  border-radius: 20px;
+  font-size:20px ;
   width: 80%;
+  background-color: #239cff;
   border: 1px solid burlywood;
 }
 #phone{
@@ -143,9 +146,29 @@ input{
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: url(images/bluesky.jpg);
-    background-size: cover;
+    animation:header 15s infinite;
+    animation-duration: 25s;
+  background-size: cover;
+  position: relative;
   }
+  @keyframes header{
+0%{
+  background-image: url(thunder.jpg);
+}
+25%{
+  background-image: url(dawncloudy.jpg);
+}
+50%{
+  background-image: url(sunlight.jpg);
+}
+75%{
+  background-image: url(coldsnow.jpg);
+}
+100%{
+  background-image: url(cloudbackground.jpg);
+}
+  }
+
   #headerstuff {
     display: inline-block;
     width: 100%;
@@ -177,6 +200,9 @@ input{
   h3 {
     font-size: 30px;
     padding-bottom: 15px;
+  }
+  h4{
+    color: white;
   }
   header nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
