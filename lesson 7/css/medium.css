@@ -1,6 +1,7 @@
 @media only screen and (min-width: 600px){
     body{
         background-color: rgb(226, 226, 226);
+        display: block;
     }
     .gallery{
         text-align: center;
@@ -10,7 +11,11 @@
 }
 @media only screen and (max-width: 600px){
     body{
+      display: block;
         background-color: rgb(185, 185, 185);
+    }
+    h1{
+      padding-top: 300px;
     }
     .gallery{
         text-align: center;
@@ -52,6 +57,8 @@
     nav {
       background-color: transparent;
       height: 100%;
+      padding-top: 30px;
+      font-size: 50px;
     }
   }
   @media (max-width: 680px) {
@@ -66,15 +73,10 @@
       display: none;
     }
   }
-  @media (max-width: 680px) {
-    nav a {
-      font-size: 35px;
-    }
-  }
+
   
   @media (max-width: 680px) {
     nav a:hover {
-      font-size: 50px;
       background-color: rgba(0, 0, 0, 0.2);
     }
   }

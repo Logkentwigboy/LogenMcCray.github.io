@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here is the assigment for the homepage for 
+    Preston">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="PrestonHomepage.css">
+    <link rel="stylesheet" href="PrestonHomepageMedium.css">
+    <link rel="stylesheet" href="PrestonHomepageSmall.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
+    <script src="js/togglemenu.js"></script>
+    <script src="js/toggleMenu.1.js"></script>
+    <title>Website preston homepage</title>
+</head>
+
+<body>
+
+    <header>
+
+            <div id="headerstuff">
+            <img src="images/weathericon3.png" alt="third Icon">
+            <h1>Weather Forecast</h1>
+            <h4>For all your weather needs</h4>
+        </div>
+
+
+        <div id="navbox">
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                        <li class="active"> <a href="#">Home</a></li>
+                    <li> <a href="https://logkentwigboy.github.io/lessono%206/preston6.html">Preston</a></li>
+                    <li> <a href="#">Fish Haven</a></li>
+                    <li><a href="../../lesson8/form/stormcenter.html">Storm Center</a></li>
+                    <li><a href="https://logkentwigboy.github.io/lesson%207/lesson7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--  ------------------------------------------------------->
+    <main>
+        <section id="FishHaven">
+            <h3>Fish Haven</h3>
+            <h5><i>This is Fish Haven</i></h5>
+            <p><b>Year Founded</b> 1864</p>
+        </section>
+        <section id="Preston">
+            <h3>Preston</h3>
+            <h5><i>This is Preston </i></h5>
+            <p><o>Year Founded</b> 1866</p>
+        </section>  
+        <section id="SodaSprings">
+            <h3>Soda Springs</h3>
+            <h5><i>This is Soda Springs</i></h5>
+            <p><b>Year Founded</b> 1868</p>
+        </section>        
+
+    </main>
+    
+    <footer>
+        &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
+            target="_blank">Byui Online Learning</a>
+        <br>
+        <p id="dateStamp"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("dateStamp").innerHTML = d;
+        </script>
+          <script>
+        function getwords(){
+        text = words.value;
+        document.getElementById("para").innerHTML = text
+        document.getElementById("words").innerHTML = "enter"
+        }
+        </script>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>
