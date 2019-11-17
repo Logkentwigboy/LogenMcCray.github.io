@@ -65,17 +65,16 @@ body{
   }
   /* Here is all the main code*/
   main{
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color: lightgoldenrodyellow;
   }
     /* Here is all the Section code*/
-    section{
+    
+    .cards{
+      text-align: justify;
+      background-color: blue;
       text-align: center;
-      width: 80%;
-      height: 80%;
-      background-color: lightblue;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   h1 {
     color: yellow;
@@ -152,4 +151,10 @@ body{
   margin: 0;
   background-color: #239cff;
 }
+.info{
+  display: grid;
+  
+}
+
+
 
