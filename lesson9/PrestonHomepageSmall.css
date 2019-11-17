@@ -1,14 +1,28 @@
 @media (max-width: 680px) {
-  form{width: 300px;
-    display: inline-block;
-
+  header {
+    background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
   }
+  @keyframes header{
+    0%{
+      background-color:transparent;
+    }
+    25%{
+      background-color:transparent;
+    }
+    50%{
+      background-color:transparent;
+    }
+    75%{
+      background-color:transparent;
+    }
+    100%{
+      background-color:transparent;
+    }
+      }
     #primaryNav{
       margin: 0 auto;
     }
-    header {
-      background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
-    }
+    
     #headerstuff {
       width: 100%;
     }
@@ -48,22 +62,15 @@
     .hiddenh2 {
       display: none;
     }
-    .weather {
-      position: relative;
-      padding-bottom: 80px;
-      display: block;
+    #Town{
+      display: grid;
+      grid-template-columns: 1fr;
     }
-    #imageplaceholder{
-      display: block;
-    }
-    #contact {
-      font-size: 18px;
-    }
-    #sectiontwo {
-      display: flex;
-    }
-    #title{
-      margin-left: 15px;
-      width: 300px;
+    #heroImg{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
