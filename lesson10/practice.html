@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="practice.css">
+    <title>Practice</title>
+</head>
+<body>
+<main>
+        <h1>testing api</h1>
+        <p>City Name: <span id="CityName"></span></p>
+        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <p>humidity <span id="humidity"></span></p>
+        <p>conditions <span id="CurrentCondition"></span></p>
+        <p>Wind speed <span id="WindSpeed"></span></p>
+</main>
+<!--Here is the code for the daily weather report-->
+<script>
+    const apiURL = "http://api.openweathermap.org/data/2.5/weather?q=Preston,Idaho&appid=575e22d506a257862a45babb05c77c80&units=imperial";
+fetch(apiURL)
+.then((response) => response.json())
+.then((jsObject) => {
+  document.getElementById('CityName').textContent = jsObject.name;
+
+  document.getElementById('current-temp').textContent = jsObject.main.temp;
+
+  document.getElementById('humidity').textContent = jsObject.main.humidity;
+
+  document.getElementById('CurrentCondition').textContent =jsObject.weather.id;
+  document.getElementById('WindSpeed').textContent =jsObject.wind.speed;
+
+});
+</script>
+   
+</body>
+</html>
