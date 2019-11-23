@@ -1,0 +1,207 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+
+}
+
+header {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background: url("https://centricdigital.com/wp-content/uploads/2014/10/Clouds1.jpeg");
+  height: 400px;
+}
+
+header img {
+  width: 90px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header h1 {
+  padding-top: 20px;
+  font-size: 60px;
+  color: #f8f07c;
+}
+
+header #navbox {
+  padding-top: 100px;
+}
+
+header nav {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border: 3px solid black;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 800px) {
+  header nav {
+    border: none;
+  }
+}
+
+header nav li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 800px) {
+  header nav li {
+    padding-bottom: 10px;
+    float: right;
+    width: 100%;
+    display: block;
+  }
+}
+
+header nav li a {
+  color: black;
+  font-size: 30px;
+}
+
+header nav li a:hover {
+  color: white;
+}
+
+header nav li a:active {
+  color: #158664;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 630px;
+    border: none;
+  }
+}
+
+main {
+  padding: 20px;
+  background-color: #b5e8ff;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding-top: 150px;
+  }
+}
+
+main article {
+  text-align: center;
+  border: 2px  solid black;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+main h2 {
+  font-family: 'Montseraat', sans-serif;
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #303030;
+  font-size: 15px;
+}
+
+main img[src$="normal.jpg"] {
+  width: 100%;
+}
+
+main section {
+  border: 2px  solid black;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+main section h2 {
+  color: #000000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+main section p {
+  color: #303030;
+  font-size: 20px;
+}
+
+main footer {
+  background-color: #239cff;
+  text-align: center;
+}
+
+footer {
+  background-color: #239cff;
+  text-align: center;
+}
+
+#firstcolor {
+  padding: 10px;
+  background-color: #b5e8ff;
+  height: 80px;
+}
+
+#firstcolor p {
+  color: white;
+}
+
+#secondcolor {
+  padding: 20px;
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+
+#secondcolor p {
+  color: white;
+}
+
+#Thirdcolor {
+  background-color: #303030;
+  padding: 20px;
+  height: 90px;
+}
+
+#Thirdcolor p {
+  color: white;
+}
+
+#Fourthcolor {
+  background-color: #f8f07c;
+  padding: 20px;
+  height: 80px;
+}
+
+#Fourthcolor p {
+  color: white;
+}
+
+li {
+  font-size: 25px;
+  display: inline-block;
+  padding-left: 40px;
+  text-align: center;
+}
+
+img[src$="sydspic.jpg"] {
+  width: 50%;
+}
+
+img[src$="scottspic.jpg"] {
+  width: 50%;
+}
+/*# sourceMappingURL=lesson3style.css.map */

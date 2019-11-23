@@ -1,0 +1,408 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+body {
+  background-color: lightblue;
+}
+
+header {
+  padding: 5px 0;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-image: url(https://www.farmersalmanac.com/wp-content/uploads/2013/04/Cumulus-Clouds-i638401832.jpg);
+}
+
+@media (max-width: 680px) {
+  header {
+    background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
+  }
+}
+
+#headerstuff {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #headerstuff {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  #headerstuff {
+    width: 100%;
+  }
+}
+
+#headerstuff img {
+  float: left;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 200px;
+}
+
+@media (max-width: 680px) {
+  header img {
+    width: 100px;
+  }
+}
+
+h1 {
+  color: yellow;
+  padding-top: 20px;
+  padding-right: 70px;
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  float: left;
+  padding-left: 30px;
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+/*--HERE IS THE CODE FOR THE HEADER-*/
+header nav {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  width: 100%;
+}
+
+@media (max-width: 2000px) {
+  nav {
+    background-color: wheat;
+    padding-top: 25px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    background-color: lightblue;
+    height: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav {
+    background-color: transparent;
+    height: 100%;
+  }
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 50px;
+}
+
+@media (max-width: 680px) {
+  nav ul {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  nav ul.hide {
+    display: none;
+  }
+}
+
+nav a {
+  font-size: 30px;
+  color: #111;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:active {
+  color: yellow;
+}
+
+nav a:focus {
+  color: yellow;
+}
+
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav a {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav a:hover {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+nav button {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  nav button {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+nav button:hover {
+  font-size: 50px;
+  color: #ffff;
+}
+
+@media (max-width: 680px) {
+  #widget {
+    display: none;
+  }
+}
+
+/*--HERE IS THE CODE FOR THE BODY-*/
+main {
+  background-image: url(http://hddesktopwallpapers.in/wp-content/uploads/2015/09/sunshine-wallpaper-mountains.jpg);
+}
+
+Section {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding-top: 10px;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 680px) {
+  Section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+.nextweek {
+  width: 100%;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rows;
+          flex-direction: rows;
+}
+
+@media (max-width: 680px) {
+  .nextweek {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .hiddenh2 {
+    display: none;
+  }
+}
+
+.days {
+  padding-top: 15px;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(173, 216, 230, 0.6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.temp {
+  padding: 20px;
+}
+
+.temp img {
+  width: 80px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+}
+
+article span {
+  color: yellow;
+}
+
+#weathersum {
+  border: 3px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 25px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+@media (max-width: 680px) {
+  #weathersum {
+    width: 100%;
+  }
+}
+
+span {
+  color: yellow;
+}
+
+.weather {
+  background-color: rgba(173, 216, 230, 0.6);
+  margin: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 680px) {
+  .weather {
+    display: block;
+  }
+}
+
+#articlepPreston {
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(232, 245, 47, 0.8);
+  overflow: hidden;
+}
+
+#imageplaceholder {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  #imageplaceholder {
+    display: block;
+    margin: 20px;
+  }
+}
+
+#mobileReport {
+  display: block;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgba(232, 245, 47, 0.8);
+}
+
+#contact {
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 680px) {
+  #contact {
+    font-size: 18px;
+  }
+}
+
+.work {
+  display: none;
+}
+
+#contactbox {
+  margin: 20px;
+  background-color: rgba(173, 216, 230, 0.6);
+}
+
+@media (max-width: 1200px) {
+  #sectiontwo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  #sectiontwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*--HERE IS THE CODE FOR THE FOOTER-*/
+footer {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #239cff;
+}
+/*# sourceMappingURL=preston-4.css.map */
