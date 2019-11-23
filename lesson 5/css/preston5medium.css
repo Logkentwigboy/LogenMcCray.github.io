@@ -12,6 +12,12 @@
   #headerstuff {
     width: 100%;
   }
+  .FiveDayForecast{
+    background-color: azure;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
 }
 @media (max-width: 1200px) {
   h2 {

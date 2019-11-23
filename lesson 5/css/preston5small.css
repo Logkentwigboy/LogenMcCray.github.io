@@ -12,6 +12,11 @@
   header {
     background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
   }
+  .FiveDayForecast{
+    padding:10px;
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
 }
 @media (max-width: 680px) {
   #headerstuff {
