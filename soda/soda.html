@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here is the assigment for the homepage for 
+    Preston">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="../lesson10/lesson10/css/normalize.css">
+    <link rel="stylesheet" href="../lesson10/lesson10/css/preston5large.css">
+    <link rel="stylesheet" href="../lesson10/lesson10/css/preston5medium.css">
+    <link rel="stylesheet" href="../lesson10/lesson10/css/preston5small.css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png.png">
+    <title>Website preston homepage</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="headerstuff">
+        <img src="images/weathericon3.png" alt="third Icon">
+        <h1>Weather Forecast</h1>
+        <h4>For all your weather needs</h4>
+    </div>
+
+
+    <div id="navbox">
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                    <li class="active"> <a href="../../lesson11/index.html">Home</a></li>
+                <li> <a href="../lesson10/lesson10/preston10.html">Preston</a></li>
+                <li> <a href="soda.html">Soda</a></li>
+                <li> <a href="../FishHaven/FishHaven.html">Fish Haven</a></li>
+                <li><a href="../lesson8/form/stormcenter.html">Storm Center</a></li>
+                <li><a href="../../lesson7/lesson7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+        <h2 class="hiddenh2">Next Week Forcast</h2>
+        <br>
+        <br>    
+        <div class="FiveDayForecast"></div>
+        <br>
+        <h2>Soda</h2>
+        <br>
+        <section>
+            <!-- This is the code for the first secont. The imported widget and the two articles. -->
+                <article>
+                        <div id="SodaSpring">
+                        <div id="Town"></div>
+                        </div> 
+                <div id="articlepPreston">
+ 
+                    <h4>Weather Report</h4><!--The random text under the week report-->
+                    <p>This Afternoon Snow likely, mainly before 5pm. Cloudy, with a high near 32. South wind 6 to 8 mph. Chance of precipitation is 70%. Total daytime snow accumulation of around an inch possible.
+                            Tonight A 40 percent chance of snow, mainly before 8pm. Mostly cloudy, with a steady temperature around 28. South southwest wind around 5 mph becoming calm in the evening. New snow accumulation of less than a half inch possible.</p>
+                </div>
+                </article>
+                <div class="weather">
+                   
+                    <div id="weathersum">
+                        <h3>Weather Summary</h3>
+                        <p>City Name: <span id="CityName"></span></p>
+                        <p>Temperature <span id="current-temp"></span>&deg; F</p>
+                        <p>humidity <span id="humidity"></span></p>
+                        <p>WindChill: <span>N/A &deg;F</span></p>
+                        <p>Conditions <span id="CurrentCondition"></span></p>
+                    </div>
+                </div>
+      
+        </section>
+       
+        <section id="sectiontwo">
+               
+            <!--Section with the map and other text-->
+                <div id="PrestonMap">
+                    <img src="../lesson10/lesson10/images/prestonmap.png" alt="preston map">
+                </div>
+                <div id="contactbox">
+                <div id="contact">
+                    <h2><u>Contact</u></h2>
+                    <br>
+                    <br>
+                    <p>Please email us at yourweatherservices.com</p>
+                    <br>
+                    <p>We are located right to your house</p>
+                    <br>
+                    <p>Check out our other infr on the other pages please</p>
+                    <br>
+                    <P>call: (208) 543-9283</P>
+                    </div>
+                </div>
+               
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
+            target="_blank">Byui Online Learning</a>
+        <br>
+        <p id="dateStamp"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("dateStamp").innerHTML = d;
+        </script>
+       
+
+    </footer>
+    <script src="../lesson10/lesson10/js/toggleMenu.1.js"></script>
+    <script src="js/soda.js"></script>
+    <script>
+        const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Soda,Idaho&appid=575e22d506a257862a45babb05c77c80&units=imperial";
+    fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      document.getElementById('CityName').textContent = jsObject.name;
+    
+      document.getElementById('current-temp').textContent = jsObject.main.temp;
+    
+      document.getElementById('humidity').textContent = jsObject.main.humidity;
+    
+      document.getElementById('CurrentCondition').textContent= jsObject.weather[0].description;
+    
+      document.getElementById('WindSpeed').textContent =jsObject.wind.speed;
+    
+    });
+    </script>
+    <script>const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=2335219&units=imperial&appid=575e22d506a257862a45babb05c77c80"
+      fetch(forecastURL)
+          .then((response) => response.json())
+          .then((jsObject) => {
+              console.log(jsObject);
+      
+              for (let i = 0; i< jsObject.list.length; i++) {
+                  if (jsObject.list[i].dt_txt.includes('18:00:00')) {
+                      let card = document.createElement('section');
+                      let image = document.createElement('img');
+                      let p1 = document.createElement('p');
+                      let iconsrc = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather[0].icon + '@2x' + '.png';
+                      let iconalt = jsObject.list[i].weather[0].description;
+                      let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                      let d = new Date(jsObject.list[i].dt_txt);
+                      let nameOfDay = days[d.getDay()];
+                      let weekday = document.createElement('h3');
+      
+                      weekday.textContent = nameOfDay;
+                      p1.innerHTML = 'High: ' +  Math.floor(jsObject.list[i].main.temp_max) + '&#176;F' + '<br>' + 'Low: ' +  Math.floor(jsObject.list[i].main.temp_min) + '&#176;F';
+                      image.setAttribute('src', iconsrc);
+                      image.setAttribute('alt', iconalt);
+                      
+                      card.appendChild(weekday);
+                      card.appendChild(image);
+                      card.appendChild(p1);
+      
+                      document.querySelector('div.FiveDayForecast').appendChild(card);
+                  }
+              }
+              
+          });
+          </script>
+</body>
+
+</html>

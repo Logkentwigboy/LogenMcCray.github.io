@@ -163,8 +163,8 @@ body{
   nav ul {
   
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-left: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0px;
   }
   nav a {
     font-size: 30px;

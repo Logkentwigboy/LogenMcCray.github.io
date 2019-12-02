@@ -1,0 +1,130 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+@media (max-width: 680px) {
+  header {
+    background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
+  }
+}
+@media (max-width: 680px) {
+  #headerstuff {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  header img {
+    width: 100px;
+  }
+}
+@media (max-width: 680px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 680px) {
+  nav {
+    background-color: transparent;
+    height: 100%;
+  }
+}
+@media (max-width: 680px) {
+  nav ul {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  nav ul.hide {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  nav a {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav a:hover {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 680px) {
+  nav button {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 680px) {
+  #widget {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  Section {
+   
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media (max-width: 680px) {
+  .nextweek {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .hiddenh2 {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  #weathersum {
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 680px) {
+  .weather {
+    position: relative;
+    padding-bottom: 80px;
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  #imageplaceholder{
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  #contact {
+    font-size: 18px;
+  }
+}
+@media (max-width: 680px) {
+  #sectiontwo {
+    display: flex;
+  }
+}
+@media (max-width: 680px) {
+  #PrestonMap img{
+    display: none;
+  }
+}

@@ -32,16 +32,17 @@
 
 
     <div id="navbox">
-        <nav>
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                    <li class="active"> <a href="../../lesson11/index.html">Home</a></li>
-                <li> <a href="https://logkentwigboy.github.io/lessono%206/preston6.html">Preston</a></li>
-                <li> <a href="#">Fish Haven</a></li>
-                <li><a href="../lesson 8/form/stormcenter.html">Storm Center</a></li>
-                <li><a href="../../lesson 7/lesson7.html">Gallery</a></li>
-            </ul>
-        </nav>
+            <nav>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
+                            <li class="active"> <a href="../../lesson11/index.html">Home</a></li>
+                        <li> <a href="preston10.html">Preston</a></li>
+                        <li> <a href="../../soda/soda.html">Soda</a></li>
+                        <li> <a href="../../FishHaven/FishHaven.html">Fish Haven</a></li>
+                        <li><a href="../lesson8/form/stormcenter.html">Storm Center</a></li>
+                        <li><a href="../../lesson7/lesson7.html">Gallery</a></li>
+                    </ul>
+                </nav>
     </div>
 </header>
     <main>
@@ -54,20 +55,14 @@
         <section>
             <!-- This is the code for the first secont. The imported widget and the two articles. -->
                 <article>
-         
+                  <div id="SodaSpring">
+                    <div id="Town"></div>
+                  </div> 
              
                 <div id="articlepPreston">
                     <h4>Weather Report</h4><!--The random text under the week report-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quas expedita recusandae, et
-                        voluptatem nesciunt placeat,
-                        sequi asperiores ex nam voluptates soluta? Cumque, quis modi?Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit.
-                        Provident, vitae? Ipsum, veniam nulla repellendus obcaecati laborum molestiae labore nisi
-                        quaerat eligendi reprehenderit,
-                        adipisci eum aliquam?</p>
-                        <div id="imageplaceholder">
-                    <img src="images/smallerportland.jpg" alt="Just a picture to match the wireframe">
-                    </div>
+                    <p>This Afternoon A chance of snow before 3pm, then a chance of rain and snow. Cloudy, with a high near 34. Light south wind. Chance of precipitation is 50%. Total daytime snow accumulation of less than one inch possible.
+                            Tonight A 20 percent chance of snow before 9pm. Cloudy, with a low around 23. Light south wind</p>
                 </div>
                 </article>
                 <div class="weather">
@@ -108,6 +103,7 @@
         </section>
     </main>
     <footer>
+
         &copy;<span id="copyrightYear"></span>| Logen McCray | Portland Oregon | <a href="https://www.byui.edu/online"
             target="_blank">Byui Online Learning</a>
         <br>
@@ -119,6 +115,7 @@
         <script src="../lesson10/practice.js"></script>
 
     </footer>
+    <script src="js/preston.js"></script>
     <script>
         const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Preston,Idaho&appid=575e22d506a257862a45babb05c77c80&units=imperial";
     fetch(apiURL)

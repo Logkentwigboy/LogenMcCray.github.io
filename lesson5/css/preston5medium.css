@@ -1,0 +1,52 @@
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+@media (max-width: 1200px) {
+  #headerstuff {
+    width: 100%;
+  }
+  .FiveDayForecast{
+    background-color: azure;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    background-color: lightblue;
+    height: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  nav a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  #sectiontwo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+  }
+}
+@media (max-width: 1200px){
+  nav a:hover{
+    width: 100%;
+    height: 100%;
+  }
+}

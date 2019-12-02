@@ -1,0 +1,329 @@
+
+* {
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    list-style: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+  }
+  $dektop:2000px;
+  @mixin dektop{
+    @media (max-width:#{$dektop}) {
+  @content;
+    }
+  }
+
+  $tablet:1200px;
+  @mixin tablet {
+    @media (max-width: #{$tablet}) {
+      @content;
+  }
+}
+$mobile:680px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }    
+}
+  
+body{
+  background-color: lightblue;
+}
+  header {
+
+    padding: 5px 0;
+    padding-top:50px;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    background-image: url(https://www.farmersalmanac.com/wp-content/uploads/2013/04/Cumulus-Clouds-i638401832.jpg);
+    @include mobile{
+      background-image: url(https://wallpapersite.com/images/wallpapers/rapeseed-fields-1080x1920-sunny-day-summer-landscape-hd-13083.jpg);
+    }
+  }
+  #headerstuff{
+    
+    display: inline-block;
+    width:100%;
+    @include tablet{
+      width: 100%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+  #headerstuff img{
+    float:left;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  header img{
+    width: 200px;
+    @include mobile{
+      width: 100px;
+    }
+  }
+ 
+  h1{
+      color:yellow;
+      padding-top:20px;
+      padding-right: 70px;
+      font-size: 45px;
+  }
+  h2{
+    font-size: 30px;
+    color:white;
+    float: left;
+    padding-left: 30px;
+    @include tablet{
+      float: none;
+      text-align: center;
+    }
+    @include mobile{
+      float:none;
+      text-align: center;
+    }
+  }
+h3{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+  /*--HERE IS THE CODE FOR THE HEADER-*/
+  
+  
+header nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    width: 100%;
+   
+   
+  }
+  nav{
+    @include dektop{
+    background-color:wheat;
+    padding-top: 25px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    }
+     @include tablet{
+       background-color:lightblue;
+       height: 50px;
+     }
+     @include mobile{
+      background-color: transparent;
+      height: 100%;
+     }
+    }
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+  
+   @include mobile{
+     width: 100%;
+     display: block;
+   }
+  }
+  
+    nav ul.hide{
+      @include mobile{
+        display: none;
+      }
+    }
+
+  nav a{
+    
+      font-size: 30px;
+      color:#111;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &:hover{color:white;}
+    &:active{color:yellow}
+    &:focus{color:yellow;}
+    cursor: pointer;
+    @include tablet{
+      font-size: 20px;
+    }
+    @include mobile{
+      font-size: 35px;
+    }
+    }
+  nav a:hover{
+    @include mobile{
+      font-size:50px;
+      background-color: rgba(0,0,0,0.2);
+  }
+    }
+nav button{
+  display: none;
+  @include mobile{
+    display: block;
+  margin: .2rem 2%;
+  background-color: transparent;
+  border:none;
+  font-size: 30px;
+  cursor: pointer;
+  }
+}
+nav button:hover{
+   font-size: 50px;
+  color:#ffff;
+ 
+}
+
+#widget{
+  @include mobile{
+    display: none;
+  }
+}
+  /*--HERE IS THE CODE FOR THE BODY-*/
+  main{
+    background-image: url(http://hddesktopwallpapers.in/wp-content/uploads/2015/09/sunshine-wallpaper-mountains.jpg);
+
+  }
+  Section{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    border:2px solid black;
+    padding-bottom: 20px;
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    box-sizing: border-box;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      padding:10px;
+      margin:0;
+    }
+  }
+.nextweek{
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: rows;
+  @include mobile{
+    display: none;
+  }
+}
+.hiddenh2{
+  @include mobile{
+  display: none;
+  }
+}
+.days{
+  padding-top:15px;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(173,216,230,0.6);
+  box-sizing: border-box;
+}
+.temp{
+  padding:20px;
+}
+.temp img{
+  width: 80px;
+}
+  article{
+    width: 100%;
+   height: 100%;
+  }
+
+  article span{
+    color:rgb(255, 255, 0);
+  }
+  #weathersum{
+   
+      border: 3px solid black;
+    box-sizing: border-box;
+    font-size: 25px;
+    width: 100%;
+    padding:20px;
+   text-align: left;
+   @include mobile{
+     width:100%;
+   }
+  }
+  span{
+    color:yellow
+  }
+  .weather{
+    background-color: rgba(173,216,230,0.6);
+    margin:20px;
+    padding:20px;
+    @include mobile{
+      display: block;
+    }
+  }
+  #articlepPreston{
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(232, 245, 47, 0.8);
+    overflow:hidden;
+  }
+#imageplaceholder{
+  display: none;
+  @include mobile{
+  display: block;
+  
+  margin:20px;
+  }
+}
+  #mobileReport{
+    display: block;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(232, 245, 47, 0.8);
+  }
+
+
+
+ 
+#contact{
+  width: 80%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+  font-size: 25px;
+  @include mobile{
+    font-size: 18px;
+  }
+}
+.work{
+  display: none;
+}
+#contactbox{
+  margin:20px;
+  background-color: rgba(173,216,230,0.6);
+ 
+}
+#sectiontwo{
+  @include tablet{
+    box-sizing: border-box;
+    display: block;
+  }
+  @include mobile{
+  display: flex;
+  }
+}
+
+  /*--HERE IS THE CODE FOR THE FOOTER-*/
+  
+  footer{
+    text-align: center;
+    padding:0;
+    margin:0;
+    background-color: rgb(35, 156, 255);
+  }

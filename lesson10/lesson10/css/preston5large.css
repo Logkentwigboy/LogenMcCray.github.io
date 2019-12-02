@@ -55,6 +55,14 @@ h1 {
   padding-right: 70px;
   font-size: 45px;
 }
+#SodaSpring{
+  font-size:20px;
+  background-color: rgb(144, 144, 144, 0.6);
+}
+#town{
+  text-align: center;
+
+}
 
 h2 {
   font-size: 30px;
@@ -74,10 +82,10 @@ header nav {
   width: 100%;
 }
 nav ul {
-
+  
   display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding-left: 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 0px;
 }
 nav a {
   font-size: 30px;
@@ -178,10 +186,11 @@ span {
   padding: 20px;
 }
 #articlepPreston {
+  color: white;
   text-align: left;
   padding: 20px;
   font-size: 20px;
-  background-color: rgba(232, 245, 47, 0.8);
+  background-color: rgba(73, 73, 73, 0.6);
   overflow: hidden;
 }
 
@@ -193,7 +202,7 @@ span {
   text-align: left;
   padding: 20px;
   font-size: 20px;
-  background-color: rgba(232, 245, 47, 0.8);
+  background-color: rgb(144, 144, 144, 0.6);;
 }
 
 #contact {
