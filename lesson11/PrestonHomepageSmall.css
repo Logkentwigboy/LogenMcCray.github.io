@@ -38,6 +38,7 @@
       height: 100%;
     }
     nav ul {
+      
       width: 100%;
       display: block;
     }
@@ -45,6 +46,7 @@
       display: none;
     }
     nav a {
+     
       font-size: 35px;
     }
     nav a:hover {

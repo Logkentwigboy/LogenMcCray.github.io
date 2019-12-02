@@ -128,5 +128,15 @@
 @media (max-width: 680px) {
   #PrestonMap img{
     display: none;
+  
+  }
+  #SodaSpring{
+    font-size:20px;
+    background-color: rgb(144, 144, 144, 0.6);
+  }
+  #town{
+    width: 50px;
+    text-align: center;
+  
   }
 }
