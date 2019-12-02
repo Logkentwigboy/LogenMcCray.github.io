@@ -7,7 +7,7 @@ const TownData =  [
     yearFounded: "Year Founded: 1864",
     currentPopulation: "Current population: 501",
     averageRainfall: " Average rain fall: 14.2",
-    events:"Events: Nothing Currently",
+    events:"Dates and Events Below",
     April:"April 1: How Big Was That Fish Day",
     May: "May 15-30: Rush the Creek Days",
     July:"July 24: Lake Blunder Run",
@@ -28,7 +28,7 @@ ${TownData.map(function(Town){
         <p class="townInfo">${Town.yearFounded} </p>
         <p class="townInfo">${Town.currentPopulation} </p>
         <p class="townInfo">${Town.averageRainfall} </p>
-        <p class="townInfo">${Town.events} </p>
+        <p class="Events">${Town.events} </p>
         <p class="townInfo">${Town.April} </p>
         <p class="townInfo">${Town.May} </p>
         <p class="townInfo">${Town.July} </p>   

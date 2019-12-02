@@ -7,7 +7,7 @@ const TownData =  [
     yearFounded: "Year Founded: 1858",
     currentPopulation: "Current population: 2985",
     averageRainfall: " Average rain fall: 16.75",
-    events:"Events: Nothing Currently",
+    events:"Dates and Events Below",
     April:"Feburary 29: Geyser Song Day",
     May: "May 1-6: Days of May Celebration",
     July:"October 15-16: Octoberfest",

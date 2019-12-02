@@ -7,7 +7,7 @@ const TownData =  [
     yearFounded: "Year Founded: 1866",
     currentPopulation: "Current population: 52054",
     averageRainfall: " Average rain fall: 16.65",
-    events:"Events: Nothing Currently",
+    events:"Dates and Events Below",
     April:"March 29: Work Creek Revival",
     May: "July 8-12: Napoleon Dynamite Festival",
     July:"November 2-4: Freedom Days",
