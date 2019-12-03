@@ -116,9 +116,9 @@
 
     </footer>
     <script src="../lesson10/lesson10/js/toggleMenu.1.js"></script>
-    <script src="js/soda.js"></script>
+    <script src="js/FishHaven.js"></script>
     <script>
-        const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Preston,Idaho&appid=575e22d506a257862a45babb05c77c80&units=imperial";
+        const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Fish%20Haven,Idaho&appid=575e22d506a257862a45babb05c77c80&units=imperial";
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -134,7 +134,6 @@
     
     });
     </script>
-    <script src="js/FishHaven.js"></script>
     <script>const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=575e22d506a257862a45babb05c77c80"
       fetch(forecastURL)
           .then((response) => response.json())
