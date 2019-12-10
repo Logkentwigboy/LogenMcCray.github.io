@@ -1,0 +1,347 @@
+@import "variables";
+@import"mediaQueries";
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:#def2fc;
+}
+header{
+  padding:0;
+  margin:0;
+}
+/*-----Mobile Click Animation--------*/
+#menu{
+  color:white;
+  position: absolute;
+}
+.wrap{
+  @include SmallPhones{
+    display: none;
+  }
+  @include Phones{
+    display: none;
+  }
+  @include Tablets{
+    display: none;
+  }
+@include Laptops{
+  display: inline;
+}
+@include Desktop{
+  display: inline;
+}
+}
+.svg-inline--fa.fa-w-12 {
+  width: .75em;
+  padding-left: 200px;
+}
+#mobile{
+  height: 400px;
+  @include Tablets{
+    display: block;
+  }
+  @include Laptops{
+    display: none;
+  }
+  @include Desktop{
+    display: none;
+  }
+  }
+.nav{
+  height: 400px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(54, 54, 54);
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.nav a{
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.nav a:hover{
+  color:#d5af34;
+  transition: 0.2s;
+}
+.nav .close{
+  position: absolute;
+  top:0;
+  right:25px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.slide a{
+  color:#000;
+  font-size: 35px;
+}
+.slide a:hover{
+  color: rgb(0, 195, 255);
+  font-size: 35px;
+}
+#content{
+  padding:20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+  width: 100%;
+}
+/*-----Code for Navigation Bar--------*/
+nav{
+  @include SmallPhones{
+  
+  }
+  @include Phones{
+  
+  }
+ @include Tablets{
+ 
+  
+  }
+  @include Laptops{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+  }
+  @include Desktop{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    padding:10px 50px;
+    z-index: 3;
+    background: rgb(54, 54, 54);
+    
+  }
+
+    img{
+        height: 90px;
+        width: 70px;
+    }
+    .logo{
+        float: left;
+        padding-left: 20px;
+    }
+    ul li{
+      @include Tablets{
+        font-size: 25px;
+      }
+      @include Laptops{
+        width:200px;
+      }
+      @include Desktop{
+        width: 250px;
+      }
+        width:210px;
+        float:right;
+    }
+    
+    ul li a{
+        line-height: 80px;
+        color:white;
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-family: $fontSansPro;
+        font-weight: bold;
+       
+    }
+    a:hover{
+      color:#d5af34;
+    }
+    ul li ul li{
+      display: none;
+      @include Tablets{
+        font-size: 20px;
+      }
+      @include Desktop{
+        font-size: 14px;
+      }
+   
+    }
+    ul li ul li a{
+    @include Desktop{
+      padding-right: 20px;
+      font-size: 15px;
+    }
+
+    }
+    @include Tablets{
+      font-size: 15px;
+    }
+    ul li:hover ul li{
+      display: block;
+      background-color: rgba(0,0,0,0.6);
+    }
+}
+
+
+/*-------Curtain Effect----------- */
+#container{
+  background-color:#def2fc;
+}
+.curtain {
+  z-index: 3;
+    width: 100%;
+    overflow: hidden; 
+    @include Tablets{
+      padding:none;
+    }
+    @include Desktop{
+      padding-top:100px;
+    }   
+  }
+  .left-panel{
+   
+    width: 50%;
+    height: 450px;
+    float: left;
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(../images/LeftPanel.jpg);
+    transition: all 1s ease-in;
+  }
+  .right-panel {
+    width: 50%;
+    height: 450px;
+    float: left;
+    z-index: 2;
+    position: relative;
+    background-image: url(../images/RightPanel.jpg);
+    transition: all 1s ease-in;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      color: white;
+      font-size: 25px;
+      padding: 12px 24px;
+      border: 3px solid white;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+    }
+  button:hover{
+    background-color: rgb(0, 195, 255);
+  }
+    
+  }
+  #UnderCurtainImg{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .curtain:hover {
+    .left-panel {
+      transform: translateX(-100%);
+    }
+    
+    .right-panel {
+      transform: translateX(100%);
+    }
+  }
+  /*------Content on the page-------*/
+#Hometitle{
+  float: left;
+  padding-bottom: 35px;
+  border-bottom: 4px solid #d5af34;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#TopHalf{
+display: grid;
+grid-template-columns: 67% 1fr;
+}
+aside{
+  width: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  float: right;
+  margin:auto;
+}
+.HomepageButton{
+  cursor: pointer;
+  border: 3px solid black; 
+  background: #d5af34;
+  padding:10px;
+
+
+  font-size: 25px;
+  color:white;
+}
+#Quote{
+  font-size: 25px;
+  font-weight: normal;
+  margin:auto;
+  text-align: center;
+}
+#Purpose{
+  width: 60%;
+  font-size: 50px;
+  display: block;
+  margin-bottom: 50px;
+  p{
+    font-size:28px;
+  }
+}
+#section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+#BigPic{
+  margin-left:20px;
+width: 1330px;
+height: 798px;
+border:4px solid  #d5af34;
+  
+}
+#TwoSmallPics{
+  margin-left:20px;
+  margin-right:20px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.SmallPic{
+  border:4px solid  #d5af34;
+  margin:auto;
+  width: 500px;
+  height: 380px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+img{
+  width: 100%;
+  box-sizing: border-box;
+}
+h1, h2, h2, h3, h4, h5{
+  font-family: $fontDisplay;}
+footer{
+
+  width: 100%;
+  height: 100px;
+  margin-top:20px;
+  background: rgba(0,0,0,0.8);
+}

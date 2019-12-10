@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This will be the landing page for the website">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>TempleInn</title>
+</head>
+<body>
+
+    <header>
+      <section id="mobile">
+          <div id="content">
+    
+              <span class="slide">
+                  <a href="#" onclick="openSlideMenu()">
+                  <i class="fas fa-bars"></i>
+                  </a>
+              </span>
+      
+              <div id="menu" class="nav">
+                  <div class="close" onclick="closeSideMenu()">
+                  <i class="fas fa-times"></i>
+                  <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                 <li> <a href="#">Profile</a></li>
+                  <li><a href="#">Services</a></li>
+                  </ul>
+                </div>
+              </div>
+              <h1>Practice slide Header</h1>
+          </div>
+      </section>
+    <div class="wrap">
+        <nav>
+         <div class="logo"> <img src="images/OptLogo.png" alt="thumbnail"></div>
+         <ul>
+             <li><a href="Services.html">Services</a>
+              <ul>
+                <li><a href="/ServiceSubPages/Reception.html">Reception</a></li>
+                <li><a href="/ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
+                <li><a href="/ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              </ul>
+            </li>
+            <li><a href="Reservation.html">Reservation</a></li>
+            <li><a href="Temple.html">Temple</a></li>
+            <li><a href="TempleInnHomepage.html">Home</a></li>        
+          </ul>
+        </nav>
+    </div>
+    </header>
+    
+ <div id="container">
+  <!-- Here is the overall curtain div -->
+<div class="curtain">   
+        <!-- Left panel div -->
+          <div class="left-panel">
+          </div>
+        <!-- Here is the overall curtain div -->
+          <div class="right-panel">
+          </div>
+        <!-- This is the content with the text-->
+          <div class="content">
+            <img id="UnderCurtainImg" src="images/RevealPic.jpg" alt="Revealing Picture">
+            <button type="button">Make Reservation</button>
+          </div>
+      </div>
+      </div>
+    <main>
+      <div id="TopHalf">
+      <h2 id="Hometitle">Temple Inn & Suites:  Find accomadations for the house of the lord</h2>
+     <aside>
+      <button class="HomepageButton" type="button">look up Temple Locations</button>
+        <p id="Quote" >Get info about <br>temples and more</p>
+        <button class="HomepageButton" type="button">What Are Temples?</button>
+      </aside>
+      </div>
+      <br>
+      <div id="Purpose">
+      <h3>Our Purpose:</h3>
+      <br>
+      <p>Provide specialized hotels accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. Offer special services and free amenities to help enhance and prepare spiritual experience for entering the lords house. We provide hotels that are used for patrons who come to serve in the temple or who participate in events such as sealings, weddings, receptions and youth trips. All services will be available to anyone who is willing to abide by the terms and polies outlined the company’s standards. 
+    </div>
+    <h3>Temples Are Holy Places</h3>
+      <div id="section">
+        <div id="BigPic">
+          <img src="images/HugeTemple.jpg" alt="Big temple Pic">
+        </div>
+
+        <div id="TwoSmallPics">
+          <div class="SmallPic">
+            <img src="images/TempleSqure.jpg" alt="Lower small Picture">
+          </div>
+          <br>
+          <div class="SmallPic">
+            <img src="images/NightTempleSquare.jpg" alt="Lower small pic">
+          </div>
+        </div>
+      </div>
+     </main>
+   <footer>
+     
+   </footer>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   <script>
+      function openSlideMenu(){
+          document.getElementById('menu').style.width = '250px';
+          document.getElementById('content').style.marginLeft = '250px';
+      }
+      function closeSideMenu(){
+          document.getElementById('menu').style.width = '0px';
+          document.getElementById('content').style.marginLeft = '0px';
+      }
+      </script>
+</body>
+</html>
