@@ -365,6 +365,18 @@ nav ul li:hover ul li {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .content {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .content {
+    position: absolute;
+  }
+}
+
 .content button {
   position: absolute;
   top: 50%;
@@ -417,15 +429,9 @@ nav ul li:hover ul li {
       grid-template-columns: 67% 1fr;
 }
 
-@media only screen and (min-width: 768px) {
-  #TopHalf {
-    padding-top: 250px;
-  }
-}
-
 @media only screen and (min-width: 1110px) {
   #TopHalf {
-    padding-top: 350px;
+    padding-top: 0;
   }
 }
 

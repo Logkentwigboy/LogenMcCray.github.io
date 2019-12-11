@@ -251,6 +251,12 @@ nav{
     }
   }
   .content {
+    @include Tablets{
+      position: relative;
+    }
+    @include Desktop{
+      position: absolute;
+    }
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -298,15 +304,13 @@ nav{
   font-family: 'Source Sans Pro', sans-serif;
 }
 #TopHalf{
-  @include Tablets{
-    padding-top:250px;
-  }
   @include Laptops{
-    padding-top:350px;
+    padding-top: 0;
   }
   @include Desktop{
     padding-top: 20px;
   }
+  
 display: grid;
 grid-template-columns: 67% 1fr;
 }
