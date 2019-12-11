@@ -81,8 +81,21 @@ header {
   height: 400px;
 }
 
+@media only screen and (max-width: 600px) {
+  #mobile {
+    background-image: url(/images/extraSmall.jpg);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #mobile {
+    background-image: url(/images/phoneTemple.jpg);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #mobile {
+    background-image: url(/images/tablet-view.jpg);
     display: block;
   }
 }
@@ -267,12 +280,6 @@ nav ul li:hover ul li {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
-  .curtain {
-    padding: none;
-  }
-}
-
 @media only screen and (min-width: 1600px) {
   .curtain {
     padding-top: 100px;
@@ -292,6 +299,30 @@ nav ul li:hover ul li {
   transition: all 1s ease-in;
 }
 
+@media only screen and (max-width: 600px) {
+  .left-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .left-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .left-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .left-panel {
+    display: list-item;
+  }
+}
+
 .right-panel {
   width: 50%;
   height: 450px;
@@ -301,6 +332,30 @@ nav ul li:hover ul li {
   background-image: url(../images/RightPanel.jpg);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+  .right-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .right-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .right-panel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .right-panel {
+    display: list-item;
+  }
 }
 
 .content {
@@ -360,6 +415,24 @@ nav ul li:hover ul li {
   display: grid;
   -ms-grid-columns: 67% 1fr;
       grid-template-columns: 67% 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  #TopHalf {
+    padding-top: 250px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  #TopHalf {
+    padding-top: 350px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #TopHalf {
+    padding-top: 20px;
+  }
 }
 
 aside {

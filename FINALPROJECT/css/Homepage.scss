@@ -41,7 +41,14 @@ header{
 }
 #mobile{
   height: 400px;
+  @include SmallPhones{
+    background-image: url(/images/extraSmall.jpg);
+  }
+  @include Phones{
+    background-image: url(/images/phoneTemple.jpg);
+  }
   @include Tablets{
+    background-image: url(/images/tablet-view.jpg);
     display: block;
   }
   @include Laptops{
@@ -194,10 +201,7 @@ nav{
 .curtain {
   z-index: 3;
     width: 100%;
-    overflow: hidden; 
-    @include Tablets{
-      padding:none;
-    }
+    overflow: hidden;
     @include Desktop{
       padding-top:100px;
     }   
@@ -212,6 +216,18 @@ nav{
     box-sizing: border-box;
     background-image: url(../images/LeftPanel.jpg);
     transition: all 1s ease-in;
+    @include SmallPhones{
+      display: none;
+    } 
+    @include Phones{
+      display: none;
+    }
+    @include Tablets{
+      display: none;
+    }
+    @include Desktop{
+      display: list-item;
+    }
   }
   .right-panel {
     width: 50%;
@@ -221,6 +237,18 @@ nav{
     position: relative;
     background-image: url(../images/RightPanel.jpg);
     transition: all 1s ease-in;
+    @include SmallPhones{
+      display: none;
+    } 
+    @include Phones{
+      display: none;
+    }
+    @include Tablets{
+      display: none;
+    }
+    @include Desktop{
+      display: list-item;
+    }
   }
   .content {
     position: absolute;
@@ -270,6 +298,15 @@ nav{
   font-family: 'Source Sans Pro', sans-serif;
 }
 #TopHalf{
+  @include Tablets{
+    padding-top:250px;
+  }
+  @include Laptops{
+    padding-top:350px;
+  }
+  @include Desktop{
+    padding-top: 20px;
+  }
 display: grid;
 grid-template-columns: 67% 1fr;
 }
