@@ -52,7 +52,7 @@ header{
     background-image: url(/images/phoneTemple.jpg);
   }
   @include Tablets{
-    background-image: url(/images/tablet-view.jpg);
+    background-image: url(/images/TabletBanner.jpg);
     display: block;
   }
   @include Laptops{
