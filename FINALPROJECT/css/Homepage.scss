@@ -8,6 +8,11 @@
 }
 body{
     background-color:#def2fc;
+    @include Tablets{
+    }
+    @include Desktop{
+      text-align: left;
+    }
 }
 header{
   padding:0;
@@ -27,6 +32,7 @@ header{
   color:white;
   position: absolute;
   height: 500px;
+  z-index: 4;
 
 }
 .wrap{
@@ -47,8 +53,6 @@ header{
 }
 }
 .svg-inline--fa.fa-w-12 {
-  width: .75em;
-  padding-left: 200px;
 }
 .svg-inline--fa.fa-w-12:hover{
   color:rgb(255, 72, 0);
@@ -102,7 +106,6 @@ header{
   position: absolute;
   top:0;
   right:25px;
-  margin-left: 50px;
   font-size: 30px;
 }
 .slide a{
@@ -322,15 +325,18 @@ nav{
   font-family: 'Source Sans Pro', sans-serif;
 }
 #TopHalf{
+  display: grid;
   @include Laptops{
     padding-top: 0;
   }
+  @include Laptops{
+    grid-template-columns: 1fr 1fr;
+  }
   @include Desktop{
     padding-top: 20px;
+    grid-template-columns: 67% 1fr;
   }
-  
-display: grid;
-grid-template-columns: 67% 1fr;
+
 }
 aside{
   width: 500px;
@@ -356,53 +362,69 @@ aside{
   text-align: center;
 }
 #Purpose{
-  width: 60%;
-  font-size: 50px;
-  display: block;
-  margin-bottom: 50px;
-  p{
-    font-size:28px;
+  @include Tablets{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    display: block;
+    margin-bottom: 50px;
+    p{
+      font-size:28px;
+    }
   }
+  @include Desktop{
+    width: 60%;
+    font-size: 50px;
+    display: block;
+    margin-bottom: 50px;
+    p{
+      font-size:28px;
+    }
+  }
+
 }
 #sectionForPics{
   width: 100%;
-  display: grid;
   
   @include Tablets{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
+
   @include Desktop{
   grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   }
 }
 #BigPic{
 
   @include Tablets{
     background-image: url(/images/TabletBigPicture.jpg);
+    height: 350px;
+    width: 500px;
+    margin:auto;
   }
   @include Laptops{
-    margin-left:20px;
-    width: 100%;
-    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 380px;
+    width: 500px;
   }
   @include Desktop{
-  background-image:url(/images/BigTemple.jpg);
-  margin-left:20px;
-  width: 100%;
+    margin-left: 20px;
+  background-image:url(/images/930by800.jpg);
   height: 800px;
+  width: 930px;
+ 
   }
   border:4px solid  #d5af34;
-    
+  box-sizing: border-box;
 }
-#TwoSmallPics{
-  margin-left:20px;
-  margin-right:20px;
-  height: 800px;
-}
+
 .SmallPic1{
   background-image: url(/images/TempleSqure.jpg);
   border:4px solid  #d5af34;
   margin:auto;
+  margin-top: 20px;
   width: 500px;
   height: 380px;
   box-sizing: border-box;
