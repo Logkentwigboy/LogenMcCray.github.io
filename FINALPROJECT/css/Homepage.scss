@@ -72,13 +72,13 @@ header{
 #mobile{
   height: 400px;
   @include SmallPhones{
-    background-image: url(images/extraSmall.jpg);
+    background-image: url(../images/extraSmall.jpg);
   }
   @include Phones{
-    background-image: url(images/phoneTemple.jpg);
+    background-image: url(../images/phoneTemple.jpg);
   }
   @include Tablets{
-    background-image: url(images/TabletBanner.jpg);
+    background-image: url(../images/TabletBanner.jpg);
     display: block;
   }
   @include Laptops{
