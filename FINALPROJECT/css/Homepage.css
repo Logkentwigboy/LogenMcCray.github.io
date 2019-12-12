@@ -177,7 +177,7 @@ header {
   nav {
     height: 100px;
     width: 100%;
-    background-color: #363636;
+    background-color: #9b4747;
   }
 }
 
@@ -362,7 +362,7 @@ nav ul li:hover ul li {
   }
 }
 
-.content {
+.content1 {
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -370,18 +370,18 @@ nav ul li:hover ul li {
 }
 
 @media only screen and (min-width: 768px) {
-  .content {
+  .content1 {
     position: relative;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .content {
+  .content1 {
     position: absolute;
   }
 }
 
-.content button {
+.content1 button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -397,13 +397,17 @@ nav ul li:hover ul li {
   text-align: center;
 }
 
-.content button:hover {
+.content1 button:hover {
   background-color: #00c3ff;
 }
 
-#UnderCurtainImg {
+#UnderCurtainImg1 {
   width: 100%;
   margin-top: 30px;
+}
+
+#UnderCurtainImg2 {
+  display: none;
 }
 
 .curtain:hover .left-panel {
