@@ -36,10 +36,29 @@ header {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  header {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  header {
+    height: 0;
+  }
+}
+
 /*-----Mobile Click Animation--------*/
 #menu {
   color: white;
   position: absolute;
+  height: 500px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -99,7 +118,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   #mobile {
-    background-image: url(/images/tablet-view.jpg);
+    background-image: url(/images/TabletBanner.jpg);
     display: block;
   }
 }
