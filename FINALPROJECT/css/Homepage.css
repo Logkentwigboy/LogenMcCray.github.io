@@ -129,19 +129,19 @@ header {
 
 @media only screen and (max-width: 600px) {
   #mobile {
-    background-image: url(/images/extraSmall.jpg);
+    background-image: url(../images/extraSmall.jpg);
   }
 }
 
 @media only screen and (min-width: 600px) {
   #mobile {
-    background-image: url(/images/phoneTemple.jpg);
+    background-image: url(../images/phoneTemple.jpg);
   }
 }
 
 @media only screen and (min-width: 768px) {
   #mobile {
-    background-image: url(/images/TabletBanner.jpg);
+    background-image: url(../images/TabletBanner.jpg);
     display: block;
   }
 }
@@ -341,7 +341,7 @@ nav ul li:hover ul li {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(/images/LeftPanel.jpg);
+  background-image: url(../images/LeftPanel.jpg);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
 }
@@ -376,7 +376,7 @@ nav ul li:hover ul li {
   float: left;
   z-index: 2;
   position: relative;
-  background-image: url(/images/RightPanel.jpg);
+  background-image: url(../images/RightPanel.jpg);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
 }
