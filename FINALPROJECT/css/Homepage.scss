@@ -340,6 +340,9 @@ nav{
 }
 #TopHalf{
   display: grid;
+  @include SmallPhones{
+    margin-top:200px;
+  }
   @include Phones{
     margin-top:200px;
   }
@@ -413,7 +416,6 @@ aside{
   }
 }
 #BigPic{
-
   @include Tablets{
     background-image: url(/images/TabletBigPicture.jpg);
     height: 350px;
@@ -439,6 +441,7 @@ aside{
   box-sizing: border-box;
 }
 #TwoSmallPics{
+ 
   display: grid;
   @include Tablets {
     grid-template-columns: 1fr;
@@ -451,6 +454,7 @@ aside{
   }
 }
 .SmallPic1{
+  width: 100px;
   background-image: url(/images/TempleSqure.jpg);
   border:4px solid  #d5af34;
   margin:auto;

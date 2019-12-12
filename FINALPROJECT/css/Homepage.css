@@ -478,6 +478,12 @@ nav ul li:hover ul li {
   display: grid;
 }
 
+@media only screen and (max-width: 600px) {
+  #TopHalf {
+    margin-top: 200px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   #TopHalf {
     margin-top: 200px;
@@ -635,6 +641,7 @@ aside {
 }
 
 .SmallPic1 {
+  width: 100px;
   background-image: url(/images/TempleSqure.jpg);
   border: 4px solid  #d5af34;
   margin: auto;
