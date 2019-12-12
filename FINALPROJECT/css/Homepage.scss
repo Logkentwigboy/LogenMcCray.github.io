@@ -39,6 +39,9 @@ header{
   width: .75em;
   padding-left: 200px;
 }
+.svg-inline--fa.fa-w-12:hover{
+  color:rgb(255, 72, 0);
+}
 #mobile{
   height: 400px;
   @include SmallPhones{

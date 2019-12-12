@@ -8,7 +8,7 @@ h1, h2, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
   padding: 20px;
 }
-/*Please work*/
+
 p {
   font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
@@ -75,6 +75,10 @@ header {
 .svg-inline--fa.fa-w-12 {
   width: .75em;
   padding-left: 200px;
+}
+
+.svg-inline--fa.fa-w-12:hover {
+  color: #ff4800;
 }
 
 #mobile {
