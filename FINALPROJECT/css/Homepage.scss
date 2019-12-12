@@ -245,7 +245,7 @@ nav{
     z-index: 2;
     position: relative;
     box-sizing: border-box;
-    background-image: url(/images/LeftPanel.jpg);
+    background-image: url(../images/LeftPanel.jpg);
     transition: all 1s ease-in;
     @include SmallPhones{
       display: none;
@@ -266,7 +266,7 @@ nav{
     float: left;
     z-index: 2;
     position: relative;
-    background-image: url(/images/RightPanel.jpg);
+    background-image: url(../images/RightPanel.jpg);
     transition: all 1s ease-in;
     @include SmallPhones{
       display: none;
