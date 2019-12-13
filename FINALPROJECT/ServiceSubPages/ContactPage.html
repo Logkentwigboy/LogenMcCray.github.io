@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This will be the landing page for the website">
+  <link rel="stylesheet" href="css/Homepage.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>TempleInn</title>
 </head>
+
 <body>
-    <h1> Welcome to contact page</h1>
-</body>
-</html>
+
+  <header>
+    <section id="mobile">
+      <div id="content">
+
+        <span class="slide">
+          <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+
+        <div id="menu" class="nav">
+          <div class="close" onclick="closeSideMenu()">
+            <i class="fas fa-times"></i>
+            <ul>
+              <li><a href="TempleInnHomepage.html">Home</a></li>
+              <li><a href="Temple.html">Temple</a></li>
+              <li> <a href="Reservation.html">Reservation</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
+              <li><a href="ServiceSubPages/Reception.html">Reception</a></li>
+              <li><a href="ServiceSubPages/ContactPage.html">Contact Page</a></li>
+            </ul>
+          </div>
+        </div>
+        <h1>Lds Temple Inn</h1>
+      </div>
+    </section>
+    <div class="wrap">
+      <nav>
+        <div class="logo"> <img src="images/OptLogo.png" alt="thumbnail"></div>
+        <ul>
+          <li><a href="Services.html">Services</a>
+            <ul>
+              <li><a href="/ServiceSubPages/Reception.html">Reception</a></li>
+              <li><a href="/ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
+              <li><a href="/ServiceSubPages/ContactPage.html">Contact Page</a></li>
+            </ul>
+          </li>
+          <li><a href="Reservation.html">Reservation</a></li>
+          <li><a href="Temple.html">Temple</a></li>
+          <li><a href="TempleInnHomepage.html">Home</a></li>
+        </ul>
+         <!--Search Bar!-->
+          <div class="Search-Container1">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search. . ." name="search">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+    <h1>Templws</h1>
+</main>
+
+  <footer>
+    <div id="footer-content">
+ 
+      <div class="footer-section-about">
+       <h2>Check out Our social Media</h2>
+       <i class="fab fa-google"></i>
+       <br>
+       <i class="fab fa-facebook-square"></i>
+       <br>
+       <i class="fab fa-youtube"></i>
+       <br>
+       <i class="fab fa-instagram"></i>
+      </div>
+ 
+      <div class="footer-section-links">
+         <h2>About</h2>
+         <p>This webstie is created on behalf of all the people who want to get closer to God. We want people to be able to enjoy their experience and we want to help enhance their spiritual growth as well.</p>
+      </div>
+      <div class="footer-section-Contact-form">
+         <h2>Send us a message</h2>
+         <form action="ServiceSubPages/ContactPage.html">
+           <input type="submit" value="Go to Contact Page">
+         </form>     </div>
+    </div>
+    <div id="footer-buttom">
+     &copy; Final Project | Web Fronted | CIT 230 by Logen McCray
+    </div>
+   
+ 
+   </footer>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   <script>
+     function openSlideMenu() {
+       document.getElementById('menu').style.width = '250px';
+       document.getElementById('content').style.marginLeft = '250px';
+     }
+ 
+     function closeSideMenu() {
+       document.getElementById('menu').style.width = '0px';
+       document.getElementById('content').style.marginLeft = '0px';
+     }
+   </script>
+ </body>
+ 
+ </html>

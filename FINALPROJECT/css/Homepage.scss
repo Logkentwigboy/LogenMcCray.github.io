@@ -343,73 +343,8 @@ form:hover{
       transform: translateX(100%);
     }
   }
-    /*------Search Bar-------*/
-
-  nav .Search-Container1{
-    float: left;
-  }
-  nav .Search-Container1 button{
-      font-size: 25px;
-      border-radius: 3px;
-      color:white;
-      background-color: transparent;
-      border:none;
-      padding-top: 6px;
-  }
-  nav .Search-Container1 button:hover{
-    color:rgb(0, 195, 255);
-  }
-nav input{
-  @include Tablets{
-    height: 20px;
-  }
-  @include Laptops{
-    height: 20px;
-  }
-  @include Desktop{
-    height: 30px;
-  }
-  border-radius: 5px;
-  width: 150px;
-  padding:6px;
-  font-size: 17px;
-  margin-top: 20px;
-  margin-left: 10px;
-  border:none;
-}
-  .Search-Container2{
-    @include Tablets{
-      display: block;
-    }
-    @include Laptops{
-      display: none;
-    }
-    @include Desktop{
-      display: none;
-    }
-  }
-  .Search-Container2 input{
-    border-radius: 5px;
-    width: 40%;
-    height: 30px;
-    padding:6px;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-left: 170px;
-    border:none;
-    background-color: rgb(213, 176, 52);
-  }
-  .Search-Container2 button{
-    font-size: 25px;
-      border-radius: 3px;
-      color:rgb(184, 183, 183);
-      background-color: transparent;
-      border:none;
-      padding-top: 6px;
-  }
-  .Search-Container2 button:hover{
-    color:black;
-  }
+ 
+  
   /*------Content on the page-------*/
 #Hometitle{
   @include SmallPhones{
@@ -627,7 +562,6 @@ h1, h2, h2, h3, h4, h5{
       width: 250px;
       margin: 0 auto;
       padding:10px;
-     
     }
     input{
       color: white;
@@ -666,57 +600,59 @@ form:hover{
   .svg-inline--fa{
     @include SmallPhones{
       text-align: left;
-      padding-top: 10px;
-      font-size: 45px;
+      font-size:15px;
       color:white;
       margin:auto;
     }
     @include Phones{
       text-align: left;
-      padding-top: 10px;
-      font-size: 45px;
+      font-size: 15px;
       color:white;
       margin:auto;
     }
     @include Tablets{
       text-align: left;
-      padding-top: 10px;
-      font-size: 30px;
+      font-size: 15px;
       color:white;
       }
     @include Laptops{
       text-align: left;
-      padding-top: 10px;
-      font-size: 30px;
+
+      font-size: 15px;
       color:white;
       }
     @include Desktop{
     text-align: left;
-    padding-top: 10px;
-    font-size: 30px;
+    font-size: 15px;
     color:white;
     }
   }
   .svg-inline--fa:hover{
     color:  #d5af34;
     @include SmallPhones{    
-      font-size: 55px;
+      font-size: 20px;
     }
     @include Phones{    
-      font-size: 55px;
+      font-size: 20px;
     }
     @include Tablets {
-      font-size: 35px;
+      font-size: 20px;
     }
     @include Laptops{
-      font-size: 35px;
+      font-size: 20px;
     }
     @include Desktop{
-      font-size: 35px;
+      font-size: 20px;
     }
   }
 }
-
+.footer-section-about .svg-inline--fa{
+  font-size: 30px;
+  padding-top: 10px;
+}
+.footer-section-about .svg-inline--fa:hover{
+  font-size: 35px;
+}
 footer #footer-buttom{
   bottom: 0;
   width: 100%;
@@ -741,8 +677,6 @@ footer #footer-content{
   }
   height: 350px;
   button{
-
-
     background-color: transparent;
     color: white;
     font-size: 25px;

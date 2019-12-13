@@ -485,95 +485,6 @@ nav ul li:hover ul li {
           transform: translateX(100%);
 }
 
-/*------Search Bar-------*/
-nav .Search-Container1 {
-  float: left;
-}
-
-nav .Search-Container1 button {
-  font-size: 25px;
-  border-radius: 3px;
-  color: white;
-  background-color: transparent;
-  border: none;
-  padding-top: 6px;
-}
-
-nav .Search-Container1 button:hover {
-  color: #00c3ff;
-}
-
-nav input {
-  border-radius: 5px;
-  width: 150px;
-  padding: 6px;
-  font-size: 17px;
-  margin-top: 20px;
-  margin-left: 10px;
-  border: none;
-}
-
-@media only screen and (min-width: 768px) {
-  nav input {
-    height: 20px;
-  }
-}
-
-@media only screen and (min-width: 1110px) {
-  nav input {
-    height: 20px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  nav input {
-    height: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .Search-Container2 {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 1110px) {
-  .Search-Container2 {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .Search-Container2 {
-    display: none;
-  }
-}
-
-.Search-Container2 input {
-  border-radius: 5px;
-  width: 40%;
-  height: 30px;
-  padding: 6px;
-  font-size: 17px;
-  margin-top: 20px;
-  margin-left: 170px;
-  border: none;
-  background-color: #d5b034;
-}
-
-.Search-Container2 button {
-  font-size: 25px;
-  border-radius: 3px;
-  color: #b8b7b7;
-  background-color: transparent;
-  border: none;
-  padding-top: 6px;
-}
-
-.Search-Container2 button:hover {
-  color: black;
-}
-
 /*------Content on the page-------*/
 #Hometitle {
   float: left;
@@ -927,8 +838,7 @@ footer form:hover {
 @media only screen and (max-width: 600px) {
   footer .svg-inline--fa {
     text-align: left;
-    padding-top: 10px;
-    font-size: 45px;
+    font-size: 15px;
     color: white;
     margin: auto;
   }
@@ -937,8 +847,7 @@ footer form:hover {
 @media only screen and (min-width: 600px) {
   footer .svg-inline--fa {
     text-align: left;
-    padding-top: 10px;
-    font-size: 45px;
+    font-size: 15px;
     color: white;
     margin: auto;
   }
@@ -947,8 +856,7 @@ footer form:hover {
 @media only screen and (min-width: 768px) {
   footer .svg-inline--fa {
     text-align: left;
-    padding-top: 10px;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -956,8 +864,7 @@ footer form:hover {
 @media only screen and (min-width: 1110px) {
   footer .svg-inline--fa {
     text-align: left;
-    padding-top: 10px;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -965,8 +872,7 @@ footer form:hover {
 @media only screen and (min-width: 1600px) {
   footer .svg-inline--fa {
     text-align: left;
-    padding-top: 10px;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
   }
 }
@@ -977,32 +883,41 @@ footer .svg-inline--fa:hover {
 
 @media only screen and (max-width: 600px) {
   footer .svg-inline--fa:hover {
-    font-size: 55px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 600px) {
   footer .svg-inline--fa:hover {
-    font-size: 55px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   footer .svg-inline--fa:hover {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1110px) {
   footer .svg-inline--fa:hover {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   footer .svg-inline--fa:hover {
-    font-size: 35px;
+    font-size: 20px;
   }
+}
+
+.footer-section-about .svg-inline--fa {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.footer-section-about .svg-inline--fa:hover {
+  font-size: 35px;
 }
 
 footer #footer-buttom {

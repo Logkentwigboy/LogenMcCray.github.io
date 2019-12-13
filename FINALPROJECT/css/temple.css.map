@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,WAAW,EAAE,KAAK;CACrB;;AACD,AAAA,mBAAmB,CAAA;EACf,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "temple.scss"
+    ],
+    "names": [],
+    "file": "temple.css"
+}
