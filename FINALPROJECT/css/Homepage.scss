@@ -282,6 +282,12 @@ nav{
     }
   }
   .content1 {
+    @include SmallPhones{
+      margin-top:50px;
+    }
+    @include Phones{
+      margin-top: 60px;
+    }
     @include Tablets{
       position: relative;
     }
@@ -328,6 +334,73 @@ nav{
     .right-panel {
       transform: translateX(100%);
     }
+  }
+    /*------Search Bar-------*/
+
+  nav .Search-Container1{
+    float: left;
+  }
+  nav .Search-Container1 button{
+      font-size: 25px;
+      border-radius: 3px;
+      color:white;
+      background-color: transparent;
+      border:none;
+      padding-top: 6px;
+  }
+  nav .Search-Container1 button:hover{
+    color:rgb(0, 195, 255);
+  }
+nav input{
+  @include Tablets{
+    height: 20px;
+  }
+  @include Laptops{
+    height: 20px;
+  }
+  @include Desktop{
+    height: 30px;
+  }
+  border-radius: 5px;
+  width: 150px;
+  padding:6px;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border:none;
+}
+  .Search-Container2{
+    @include Tablets{
+      display: block;
+    }
+    @include Laptops{
+      display: none;
+    }
+    @include Desktop{
+      display: none;
+    }
+  }
+  .Search-Container2 input{
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    padding:6px;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 170px;
+    border:none;
+    background-color: rgb(213, 176, 52);
+  }
+  .Search-Container2 button{
+    font-size: 25px;
+      border-radius: 3px;
+      color:rgb(184, 183, 183);
+      background-color: transparent;
+      border:none;
+      padding-top: 6px;
+  }
+  .Search-Container2 button:hover{
+    color:black;
   }
   /*------Content on the page-------*/
 #Hometitle{
