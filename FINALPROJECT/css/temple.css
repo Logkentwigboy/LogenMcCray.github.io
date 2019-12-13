@@ -1,11 +1,87 @@
-#TempleSlide {
-  padding-top: 100px;
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap");
+main {
+  width: 100%;
+  height: 100%;
 }
 
-#Temples-Containers {
-  width: 500px;
-  height: 300px;
-  background-color: aqua;
-  margin: auto;
+h1, h2, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  padding-top: 150px;
+}
+
+main h2 {
+  font-size: 30px;
+}
+
+#Temples {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  #Temples {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #Temples {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #Temples {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  #Temples {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #Temples {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=temple.css.map */

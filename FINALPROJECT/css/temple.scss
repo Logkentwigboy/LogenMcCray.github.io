@@ -1,9 +1,43 @@
-#TempleSlide{
-    padding-top: 100px;
+@import "variables";
+@import"mediaQueries";
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
 }
-#Temples-Containers{
-    width: 500px;
-    height: 300px;
-    background-color: aqua;
-    margin: auto;
+main{
+padding-top: 150px;
+h2{
+    font-size: 30px;
+}
+}
+
+#Temples{
+    display: grid;
+    @include SmallPhones{
+        grid-template-columns:1fr;
+        grid-gap: 10px;
+        padding:10px;
+    }
+    @include Phones{
+        grid-template-columns:1fr;
+        grid-gap: 10px;
+        padding:10px;
+    }
+    @include Tablets{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding:10px;
+    }
+    @include Laptops{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding:10px;
+    }
+    @include Desktop{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding:10px;
+    }
 }
