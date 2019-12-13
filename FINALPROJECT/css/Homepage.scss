@@ -552,7 +552,7 @@ aside{
     height: 350px;
   }
   @include Tablets{
-    background-image: url(/images/TabletBigPicture.jpg);
+    background-image: url(images/TabletBigPicture.jpg);
     height: 350px;
     width: 500px;
     margin:auto;
@@ -566,7 +566,7 @@ aside{
   }
   @include Desktop{
     margin-left: 20px;
-  background-image:url(/images/930by800.jpg);
+  background-image:url(images/930by800.jpg);
   height: 800px;
   width: 930px;
   margin:auto;
@@ -593,7 +593,7 @@ aside{
     width: 300px;
   }
   width: 100px;
-  background-image: url(/images/TempleSqure.jpg);
+  background-image: url(images/TempleSqure.jpg);
   border:4px solid  #d5af34;
   margin:auto;
   margin-top: 20px;
@@ -606,7 +606,7 @@ aside{
   @include SmallPhones{
     width: 300px;
   }
-  background-image: url(/images/NightTempleSquare.jpg);
+  background-image: url(images/NightTempleSquare.jpg);
   border:4px solid  #d5af34;
   margin:auto;
   width: 500px;

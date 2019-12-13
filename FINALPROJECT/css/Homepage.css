@@ -775,7 +775,7 @@ aside {
 
 @media only screen and (min-width: 768px) {
   #BigPic {
-    background-image: url(/images/TabletBigPicture.jpg);
+    background-image: url(images/TabletBigPicture.jpg);
     height: 350px;
     width: 500px;
     margin: auto;
@@ -795,7 +795,7 @@ aside {
 @media only screen and (min-width: 1600px) {
   #BigPic {
     margin-left: 20px;
-    background-image: url(/images/930by800.jpg);
+    background-image: url(images/930by800.jpg);
     height: 800px;
     width: 930px;
     margin: auto;
@@ -830,7 +830,7 @@ aside {
 
 .SmallPic1 {
   width: 100px;
-  background-image: url(/images/TempleSqure.jpg);
+  background-image: url(images/TempleSqure.jpg);
   border: 4px solid  #d5af34;
   margin: auto;
   margin-top: 20px;
@@ -848,7 +848,7 @@ aside {
 }
 
 .SmallPic2 {
-  background-image: url(/images/NightTempleSquare.jpg);
+  background-image: url(images/NightTempleSquare.jpg);
   border: 4px solid  #d5af34;
   margin: auto;
   width: 500px;
