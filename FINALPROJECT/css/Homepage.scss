@@ -552,7 +552,7 @@ aside{
     height: 350px;
   }
   @include Tablets{
-    background-image: url(images/TabletBigPicture.jpg);
+    background-image: url(../images/TabletBigPicture.jpg);
     height: 350px;
     width: 500px;
     margin:auto;
