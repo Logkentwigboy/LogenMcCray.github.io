@@ -913,7 +913,6 @@ footer .svg-inline--fa:hover {
 
 .footer-section-about .svg-inline--fa {
   font-size: 30px;
-  padding-top: 10px;
 }
 
 .footer-section-about .svg-inline--fa:hover {
@@ -963,7 +962,7 @@ footer #footer-content button {
   background-color: transparent;
   color: white;
   font-size: 25px;
-  padding: 12px 24px;
+  padding: 10px 10px;
   border: 3px solid white;
   cursor: pointer;
   border-radius: 10px;

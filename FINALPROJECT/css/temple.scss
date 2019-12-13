@@ -12,7 +12,9 @@ h2{
     font-size: 30px;
 }
 }
-
+#Temples:hover{
+    grid-gap: none;
+}
 #Temples{
     display: grid;
     @include SmallPhones{

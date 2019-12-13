@@ -35,6 +35,10 @@ main h2 {
   font-size: 30px;
 }
 
+#Temples:hover {
+  grid-gap: none;
+}
+
 #Temples {
   display: -ms-grid;
   display: grid;
