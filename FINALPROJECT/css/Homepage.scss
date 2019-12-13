@@ -545,9 +545,10 @@ aside{
 }
 #BigPic{
   @include SmallPhones{
-   display: none;
+display: none;
   }
   @include Phones{
+display: none;
     width: 400px;
     height: 350px;
   }
