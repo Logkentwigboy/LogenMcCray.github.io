@@ -298,7 +298,7 @@ nav{
     width: 100%;
     z-index: 1;
     text-align: center;
-    button{
+    form{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -312,8 +312,16 @@ nav{
       border-radius: 10px;
       text-align: center;
     }
+    input{
+      color: white;
+      background-color: transparent;
+      border:none;
+    }
+    input:hover{
+      color: black;
+    }
     
-  button:hover{
+form:hover{
     background-color: rgb(0, 195, 255);
   }
     
@@ -445,41 +453,53 @@ aside{
 .HomepageButton:hover{
   color:black;
 }
-
+.HomepageButton input{
+  padding:10px;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+}
+.HomepageButton input:hover{
+  color: black;
+  cursor: pointer;
+}
 .HomepageButton{
   @include SmallPhones{
-    cursor: pointer;
     border: 3px solid black; 
     background: #d5af34;
     width: 300px;
-    height: 100px;
     font-size: 25px;
     color:white;
     margin-left: 20px;
     margin-top: 20px;
+    height: 60px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
   }
   @include Phones{
-    cursor: pointer;
     border: 3px solid black; 
     background: #d5af34;
-    padding:10px;
     width: 500px;
-    height: 100px;
     font-size: 25px;
     color:white;
+    height: 60px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
   }
   @include Tablets{
-    cursor: pointer;
     border: 3px solid black; 
     background: #d5af34;
-    padding:10px;
     width: 500px;
-    height: 100px;
     font-size: 25px;
     color:white;
+    height: 60px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
   }
   @include Laptops{
-    cursor: pointer;
   border: 3px solid black; 
   background: #d5af34;
   padding:10px;
@@ -487,17 +507,23 @@ aside{
   height: 100px;
   font-size: 25px;
   color:white;
+  height: 60px;
+  padding:20px;
+  border-radius: 10px;
+  text-align: center;
   }
   @include Desktop{
-    cursor: pointer;
   border: 3px solid black; 
   background: #d5af34;
-  padding:10px;
   width: 500px;
-  height: 100px;
   font-size: 25px;
   color:white;
-  }
+  text-align: center;
+  margin-top: 20px;
+  height: 60px;
+  padding:20px;
+  border-radius: 10px;
+} 
 }
 
 #Quote{
@@ -542,39 +568,6 @@ aside{
 
   grid-gap: 10px;
   }
-}
-#BigPic{
-  @include SmallPhones{
-display: none;
-  }
-  @include Phones{
-display: none;
-    width: 400px;
-    height: 350px;
-  }
-  @include Tablets{
-    background-image: url(../images/TabletBigPicture.jpg);
-    height: 350px;
-    width: 500px;
-    margin:auto;
-  }
-  @include Laptops{
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 380px;
-    width: 500px;
-    margin:auto;
-  }
-  @include Desktop{
-    margin-left: 20px;
-  background-image:url(../images/930by800.jpg);
-  height: 800px;
-  width: 930px;
-  margin:auto;
- 
-  }
-  border:4px solid  #d5af34;
-  box-sizing: border-box;
 }
 #TwoSmallPics{
  
@@ -623,8 +616,33 @@ h1, h2, h2, h3, h4, h5{
   font-family: $fontDisplay;}
 
   footer{
+    form{
+      background-color: transparent;
+      color: white;
+      font-size: 25px;
+      border: 3px solid white;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      margin: 0 auto;
+      padding:10px;
+     
+    }
+    input{
+      color: white;
+      background-color: transparent;
+      border:none;
+    }
+    input:hover{
+      color: black;
+    }
+    
+form:hover{
+    background-color: rgb(0, 195, 255);
+  }
     @include SmallPhones{
-      height: 700px;
+      height: 750px;
     }
     @include Phones{
       height: 700px;

@@ -56,12 +56,12 @@
           <li><a href="TempleInnHomepage.html">Home</a></li>
         </ul>
          <!--Search Bar!-->
-         <div class="Search-Container1">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search. . ." name="search">
-            <button type="submit"><i class="fas fa-search"></i></button>
-          </form>
-        </div>
+          <div class="Search-Container1">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search. . ." name="search">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
       </nav>
     </div>
   </header>
@@ -78,7 +78,9 @@
       <!-- This is the content with the text-->
       <div class="content1">
         <img id="UnderCurtainImg1" src="images/RevealPicLG.jpg" alt="Revealing Picture">
-        <button type="button">Make a Reservation<a href="ServiceSubPages/ContactPage.html"></a></button>
+        <form action="ServiceSubPages/ContactPage.html">
+          <input type="submit" value="Go to Contact Page">
+        </form>
       </div>
 
       <!--Second Search bar for Tablets and Mobile-->
@@ -97,13 +99,22 @@
     <div id="TopHalf">
       <h2 id="Hometitle">Temple Inn & Suites: Find accomadations for the house of the lord</h2>
       <aside>
-        <a href="Temple.html"><button class="HomepageButton" type="button">Look up Temple Locations</button></a>
+        <div class="HomepageButton">
+        <form action="ServiceSubPages/ContactPage.html">
+          <input type="submit" value="Go to Contact Page">
+        </form>
+        </div>
         <!-- Pop up video About Temples-->
   
         <p id="Quote">Get info about <br>temples and more</p>
 
-       <a href="https://www.youtube.com/watch?v=dhWgPwEQQ98"><button class="HomepageButton" type="button">What Are Temples?</button></a>
+        <div class="HomepageButton">
+       <form action="https://www.youtube.com/watch?v=dhWgPwEQQ98">
+        <input type="submit" value="Go to YouTube Video">
+      </form>
+       </div>
       </aside>
+      
     </div>
     <br>
     <div id="Purpose">
@@ -147,8 +158,9 @@
      </div>
      <div class="footer-section-Contact-form">
         <h2>Send us a message</h2>
-        <a href="ServiceSubPages/ContactPage.html"><button type="button">Contact Page</button></a>
-     </div>
+        <form action="ServiceSubPages/ContactPage.html">
+          <input type="submit" value="Go to Contact Page">
+        </form>     </div>
    </div>
    <div id="footer-buttom">
     &copy; Final Project | Web Fronted | CIT 230 by Logen McCray
