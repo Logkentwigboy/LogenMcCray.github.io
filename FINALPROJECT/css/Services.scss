@@ -1,0 +1,371 @@
+@import "variables";
+@import"mediaQueries";
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color:#def2fc;
+    @include Tablets{
+    }
+    @include Desktop{
+      text-align: left;
+    }
+}
+h3{
+  color:rgb(213, 175, 52);
+  @include Tablets{
+    text-align: center;
+  }
+  @include Desktop{
+    text-align: left;
+  }
+}
+h2{
+  color:#d5af34af;
+  font-size: 20px;
+}
+header{
+  padding:0;
+  margin:0;
+  @include Tablets{
+    height: 400px;
+  }
+  @include Laptops{
+    height: 100px;
+  }
+  @include Desktop {
+  height:0;
+}
+}
+/*-----Mobile Click Animation--------*/
+#menu{
+  color:white;
+  position: absolute;
+  height: 500px;
+  z-index: 4;
+
+}
+.wrap{
+  @include SmallPhones{
+    display: none;
+  }
+  @include Phones{
+    display: none;
+  }
+  @include Tablets{
+    display: none;
+  }
+@include Laptops{
+  display: inline;
+}
+@include Desktop{
+  display: inline;
+}
+}
+
+.svg-inline--fa.fa-w-12:hover{
+  color:rgb(255, 72, 0);
+}
+#mobile{
+  height: 400px;
+  @include SmallPhones{
+    background-image: url(../images/extraSmall.jpg);
+  }
+  @include Phones{
+    background-image: url(../images/phoneTemple.jpg);
+  }
+  @include Tablets{
+    background-image: url(../images/TabletBanner.jpg);
+    display: block;
+  }
+  @include Laptops{
+    display: none;
+  }
+  @include Desktop{
+    display: none;
+  }
+  }
+.nav{
+  height: 400px;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(54, 54, 54);
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+}
+.nav a{
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.nav a:hover{
+  color:#d5af34;
+  transition: 0.2s;
+}
+.nav .close{
+  position: absolute;
+  top:0;
+  right:25px;
+  font-size: 30px;
+}
+.slide a{
+  color:#000;
+  font-size: 35px;
+}
+.slide a:hover{
+  color: rgb(0, 195, 255);
+  font-size: 35px;
+}
+#content{
+  padding:20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+  width: 50%;
+}
+/*-----Code for Navigation Bar--------*/
+nav{
+  @include SmallPhones{
+  
+  }
+  @include Phones{
+ 
+  }
+ @include Tablets{
+
+  
+  }
+  @include Laptops{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    z-index: 3;
+  }
+  @include Desktop{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    padding:10px 50px;
+    z-index: 3;
+    background: rgb(54, 54, 54);
+    
+  }
+
+    img{
+        height: 90px;
+        width: 70px;
+    }
+    .logo{
+        float: left;
+        padding-left: 20px;
+    }
+    ul li{
+      @include Tablets{
+        font-size: 25px;
+      }
+      @include Laptops{
+        width:200px;
+      }
+      @include Desktop{
+        width: 250px;
+      }
+        width:210px;
+        float:right;
+    }
+    
+    ul li a{
+        line-height: 80px;
+        color:white;
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-family: $fontSansPro;
+        font-weight: bold;
+       
+    }
+    a:hover{
+      color:#d5af34;
+    }
+    ul li ul li{
+      display: none;
+      @include Tablets{
+        font-size: 20px;
+      }
+      @include Desktop{
+        font-size: 14px;
+      }
+   
+    }
+    ul li ul li a{
+    @include Desktop{
+      padding-right: 20px;
+      font-size: 15px;
+    }
+
+    }
+    @include Tablets{
+      font-size: 15px;
+    }
+    ul li:hover ul li{
+      display: block;
+      background-color: rgba(0,0,0,0.6);
+    }
+}
+
+footer{ 
+    form{
+      background-color: transparent;
+      color: white;
+      font-size: 25px;
+      border: 3px solid white;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      margin: 0 auto;
+      padding:10px;
+    }
+    input{
+      color: white;
+      background-color: transparent;
+      border:none;
+    }
+    input:hover{
+      color: black;
+    }
+    
+form:hover{
+    background-color: rgb(0, 195, 255);
+  }
+    @include SmallPhones{
+      height: 750px;
+    }
+    @include Phones{
+      height: 700px;
+    }
+    @include Tablets{
+      height: 100%;
+    }
+    @include Laptops{
+      height: 100%;
+    }
+    @include Desktop{
+      height: 100%;
+    }
+  color:white;
+  text-align: center;
+  width: 100%;
+  height:100%;
+  margin-top:20px;
+  background: rgb(54, 54, 54);
+  position: relative;
+  .svg-inline--fa{
+    @include SmallPhones{
+      text-align: left;
+      font-size:15px;
+      color:white;
+      margin:auto;
+    }
+    @include Phones{
+      text-align: left;
+      font-size: 15px;
+      color:white;
+      margin:auto;
+    }
+    @include Tablets{
+      text-align: left;
+      font-size: 15px;
+      color:white;
+      }
+    @include Laptops{
+      text-align: left;
+
+      font-size: 15px;
+      color:white;
+      }
+    @include Desktop{
+    text-align: left;
+    font-size: 15px;
+    color:white;
+    }
+  }
+  .svg-inline--fa:hover{
+    color:  #d5af34;
+    @include SmallPhones{    
+      font-size: 20px;
+    }
+    @include Phones{    
+      font-size: 20px;
+    }
+    @include Tablets {
+      font-size: 20px;
+    }
+    @include Laptops{
+      font-size: 20px;
+    }
+    @include Desktop{
+      font-size: 20px;
+    }
+  }
+}
+.footer-section-about .svg-inline--fa{
+  font-size: 30px;
+}
+.footer-section-about .svg-inline--fa:hover{
+  font-size: 35px;
+}
+footer #footer-buttom{
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding-top: 10px;
+  position: absolute;
+  background-color: rgb(68, 68, 68);
+  color: rgb(209, 209, 209);
+  height: 50px;
+  text-align: center;
+}
+footer #footer-content{
+  display: grid;
+  @include Phones{
+    grid-template-columns: 1fr;
+  }
+  @include Tablets{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include Desktop{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  height: 350px;
+  
+  button{
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    padding:10px 10px;
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  button:hover{
+  background-color: rgb(0, 195, 255);
+  }
+}
+main{
+    padding-top: 150px;
+}
