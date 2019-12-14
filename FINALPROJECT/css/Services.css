@@ -389,6 +389,7 @@ footer form:hover {
     font-size: 15px;
     color: white;
     margin: auto;
+    padding-top: 10px;
   }
 }
 
@@ -398,6 +399,7 @@ footer form:hover {
     font-size: 15px;
     color: white;
     margin: auto;
+    padding-top: 10px;
   }
 }
 
@@ -510,7 +512,7 @@ footer #footer-content button {
   background-color: transparent;
   color: white;
   font-size: 25px;
-  padding: 10px 10px;
+  padding-top: 10px;
   border: 3px solid white;
   cursor: pointer;
   border-radius: 10px;
@@ -534,45 +536,158 @@ h2 {
 #ServiceBox {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
 }
 
-#ServicePic img {
-  margin-left: 300px;
+@media only screen and (max-width: 600px) {
+  #ServiceBox {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-#ServiceText {
-  margin-right: 30px;
+@media only screen and (min-width: 600px) {
+  #ServiceBox {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #ServiceBox {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #ServiceBox {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #ServicePic img {
+    margin-left: 30px;
+  }
 }
 
 #ServiceText li {
-  list-style: square;
   padding-top: 10px;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 1600px) {
+  #ServiceText {
+    margin-right: 30px;
+  }
+  #ServiceText li {
+    text-align: left;
+    list-style: square;
+    padding-top: 10px;
+    font-size: 20px;
+  }
 }
 
 #AmeditiesBox {
   padding-top: 30px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  #AmeditiesBox {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #AmeditiesBox {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #AmeditiesBox {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #AmeditiesBox {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+img {
+  height: 100%;
+  width: 80%;
 }
 
 #AmeditiesPic img {
-  margin-right: 30px;
+  padding-top: 20px;
 }
 
-#AmeditiesText {
-  margin-left: 300px;
+@media only screen and (min-width: 1600px) {
+  #AmeditiesPic img {
+    margin-right: 30px;
+  }
 }
 
-#AmeditiesText li {
-  list-style: square;
-  padding-top: 10px;
-  font-size: 25px;
+@media only screen and (max-width: 600px) {
+  #AmeditiesText li {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #AmeditiesText li {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #AmeditiesText li {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #AmeditiesText {
+    margin-left: 300px;
+  }
+  #AmeditiesText li {
+    text-align: left;
+    list-style: square;
+    padding-top: 10px;
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=Services.css.map */

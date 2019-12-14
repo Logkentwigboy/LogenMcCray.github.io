@@ -278,12 +278,14 @@ form:hover{
       font-size:15px;
       color:white;
       margin:auto;
+      padding-top: 10px;
     }
     @include Phones{
       text-align: left;
       font-size: 15px;
       color:white;
       margin:auto;
+      padding-top: 10px;
     }
     @include Tablets{
       text-align: left;
@@ -355,7 +357,7 @@ footer #footer-content{
     background-color: transparent;
     color: white;
     font-size: 25px;
-    padding:10px 10px;
+    padding-top:10px;
     border: 3px solid white;
     cursor: pointer;
     border-radius: 10px;
@@ -376,34 +378,112 @@ h2{
 }
 #ServiceBox{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include SmallPhones{
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px;
+    }
+    @include Phones{
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px;
+    }
+    @include Tablets{
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px
+    }
+    @include Desktop{
+    grid-template-columns: 1fr 1fr;}
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+
 }
 #ServicePic img{
-    margin-left: 300px;
+    @include Desktop{
+    margin-left: 30px;
+    }
 }
 #ServiceText{
+    li{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    @include Desktop{
     margin-right: 30px;
     li{
+        text-align: left;
         list-style: square;
         padding-top: 10px;
         font-size: 20px;
+    }
     }
 }
 #AmeditiesBox{
     padding-top: 30px;
     display: grid;
+    @include SmallPhones{
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px;
+    }
+    @include Phones{
+        grid-template-columns: 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px;
+    }
+    @include Tablets{
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        text-align: center;
+        padding:20px;
+    }
+   @include Desktop{
     grid-template-columns: 1fr 1fr;
+    
 }
-#AmeditiesPic img{
-    margin-right: 30px;
 }
-#AmeditiesText{
+img{
+    height: 100%;
+    width: 80%
+}
+ #AmeditiesPic img{
+    padding-top: 20px;
+    @include Desktop{
+        margin-right: 30px;
+        }
+}
+#AmeditiesText{ 
+    @include SmallPhones{
+        li{
+            padding-top: 10px;
+            font-size: 20px;
+        }
+    }
+    @include Phones{
+        li{
+            padding-top: 10px;
+            font-size: 20px;
+        }
+    }
+    @include Tablets{
+        li{
+            padding-top: 10px;
+            font-size: 25px;
+        }
+    }
+    @include Desktop{
     margin-left: 300px;
     li{
+        text-align: left;
         list-style: square;
         padding-top: 10px;
         font-size: 25px;
     }
+}
 }
