@@ -521,7 +521,58 @@ footer #footer-content button:hover {
   background-color: #00c3ff;
 }
 
+/* HERE IS ALL THE CODE FOR THE SERVICE PAGE*/
 main {
   padding-top: 150px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#ServiceBox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+#ServicePic img {
+  margin-left: 300px;
+}
+
+#ServiceText {
+  margin-right: 30px;
+}
+
+#ServiceText li {
+  list-style: square;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#AmeditiesBox {
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#AmeditiesPic img {
+  margin-right: 30px;
+}
+
+#AmeditiesText {
+  margin-left: 300px;
+}
+
+#AmeditiesText li {
+  list-style: square;
+  padding-top: 10px;
+  font-size: 25px;
 }
 /*# sourceMappingURL=Services.css.map */
