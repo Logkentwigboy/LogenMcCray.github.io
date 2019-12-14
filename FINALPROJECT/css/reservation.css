@@ -522,7 +522,11 @@ footer #footer-content button:hover {
 }
 
 /* All THE FORM CODE AND STYLING*/
-.container {
+main {
+  padding-top: 150px;
+}
+
+.containerForm {
   text-align: center;
   width: 350px;
   height: 100%;
@@ -530,30 +534,6 @@ footer #footer-content button:hover {
   color: white;
   font-size: 30px;
   background-color: #acacac;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .container {
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .container {
-    margin-top: 150px;
-  }
 }
 
 .form-group {
