@@ -1,14 +1,11 @@
+@import"mediaQueries";
+@import "variables";
 main {
     padding-top: 150px;
   }
   *{
       margin:0;
       padding:0;
-    }
-    
-    body{
-      background:#ccc;
-      font-family: arial,verdana,tahoma;
     }
     img{
         width: 500px;
@@ -22,19 +19,74 @@ main {
       }
       
       body{
-        background:#ccc;
+        background:rgb(255, 255, 255);
         font-family: arial,verdana,tahoma;
       }
-      /*
-      Width of image : 500;
-      Width of hovered image: 500
-      Width of unhovered image: 25x;
-      Width of container : 500 + 50*4 = 700px;
-      Default 700/5 : 140px;
-      */
-      
+    
+      /*HERE IS ALL THE CONTENT FOR THE PAGE*/
+      #ReceptionContent{
+        display: grid;
+        @include SmallPhones{
+          width: 300px;
+          grid-template-columns:1fr;
+          grid-gap: 40px;
+        }
+        @include Phones{
+          width: auto;
+          grid-template-columns:1fr;
+          grid-gap: 40px;
+        }
+        @include Tablets{
+          width: auto;
+          text-align: center;
+          grid-template-columns: 1fr;
+          padding-left: 30px;
+          grid-gap: 40px;
+        }
+        @include Laptops{
+          width: auto;
+          grid-template-columns: 1fr 1fr;
+          padding-left: 30px;
+          grid-gap: 40px;
+        }
+        @include Desktop{
+          text-align: left;
+          width: auto;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30px;
+        grid-gap: 40px;
+        }
+      }
+      #ReceptionImg img{
+        width: 100%;
+      }
+      h1, h2, h2, h3, h4, h5{
+        font-family: $fontDisplay;
+        padding:20px;
+    }
+    p{
+        font-size: 20px;
+        font-family: $fontSansPro;
+        padding:20px;
+    }
+      /* HERE IS THE CODE FOR THE ACCORDIAN CODE*/
       .accordian{
-        width: 705px;
+        @include SmallPhones{
+          display: none;
+        }
+        @include Phones{
+          display: none;
+        }
+        @include Tablets{
+          display: block;
+        }
+        @include Laptops{
+          display: block;
+        }
+        @include Desktop{
+          display: block;
+        }
+        width: 800px;
         height: 333px;
         overflow:hidden;
         
@@ -43,9 +95,7 @@ main {
         -moz-box-shadow: 0 8px 6px -6px black;
         box-shadow: 0px 8px 6px -6px black;
       }
-      .accordian ul{
-        
-      }
+  
       .accordian li{
         position: relative;
         display:block;
