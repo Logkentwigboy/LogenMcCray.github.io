@@ -524,7 +524,8 @@ footer #footer-content button:hover {
 /* All THE FORM CODE AND STYLING*/
 .container {
   text-align: center;
-  width: 300px;
+  width: 350px;
+  height: 100%;
   margin: 0 auto;
   color: white;
   font-size: 30px;
@@ -565,5 +566,9 @@ input {
   height: 40px;
   border-radius: 10px;
   border: none;
+}
+
+div {
+  padding-top: 5px;
 }
 /*# sourceMappingURL=reservation.css.map */
