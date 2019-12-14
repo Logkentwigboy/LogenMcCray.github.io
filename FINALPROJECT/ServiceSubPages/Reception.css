@@ -55,7 +55,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   #ReceptionContent {
-    width: 300px;
+    width: 500px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 40px;

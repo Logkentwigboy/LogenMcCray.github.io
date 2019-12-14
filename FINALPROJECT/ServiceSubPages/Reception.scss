@@ -27,7 +27,7 @@ main {
       #ReceptionContent{
         display: grid;
         @include SmallPhones{
-          width: 300px;
+          width: 500px;
           grid-template-columns:1fr;
           grid-gap: 40px;
         }
