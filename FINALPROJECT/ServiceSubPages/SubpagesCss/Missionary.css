@@ -1,0 +1,171 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap");
+main {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px;
+}
+
+main {
+  padding-top: 150px;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+/*MISSIONARY GALLERY CODE*/
+.MissionaryPics {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  .MissionaryPics {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .MissionaryPics {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .MissionaryPics {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .MissionaryPics {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .MissionaryPics {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+/*fORM CODE*/
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: #F96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0CF;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button:hover {
+  background: #09C;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+/*# sourceMappingURL=Missionary.css.map */

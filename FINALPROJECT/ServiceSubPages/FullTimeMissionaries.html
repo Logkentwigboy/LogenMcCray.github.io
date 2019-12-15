@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="This will be the landing page for the website">
   <link rel="stylesheet" href="../css/Homepage.css">
+  <link rel="stylesheet" href="../ServiceSubPages/SubpagesCss/Missionary.css">
   <link rel="stylesheet" href="../css/normalize.css">
   <title>TempleInn</title>
 </head>
@@ -27,13 +28,13 @@
           <div class="close" onclick="closeSideMenu()">
             <i class="fas fa-times"></i>
             <ul>
-              <li><a href="TempleInnHomepage.html">Home</a></li>
-              <li><a href="Temple.html">Temple</a></li>
-              <li> <a href="Reservation.html">Reservation</a></li>
-              <li><a href="Services.html">Services</a></li>
-              <li><a href="ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
-              <li><a href="ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="../TempleInnHomepage.html">Home</a></li>
+              <li><a href="../Temple.html">Temple</a></li>
+              <li> <a href="../Reservation.html">Reservation</a></li>
+              <li><a href="../Services.html">Services</a></li>
+              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
+              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
+              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
             </ul>
           </div>
         </div>
@@ -42,18 +43,18 @@
     </section>
     <div class="wrap">
       <nav>
-        <div class="logo"> <img src="images/OptLogo.png" alt="thumbnail"></div>
+        <div class="logo"> <img src="../images/OptLogo.png" alt="thumbnail"></div>
         <ul>
-          <li><a href="Services.html">Services</a>
+          <li><a href="../Services.html">Services</a>
             <ul>
-              <li><a href="/ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="/ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
-              <li><a href="/ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
+              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
+              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
             </ul>
           </li>
-          <li><a href="Reservation.html">Reservation</a></li>
-          <li><a href="Temple.html">Temple</a></li>
-          <li><a href="TempleInnHomepage.html">Home</a></li>
+          <li><a href="../Reservation.html">Reservation</a></li>
+          <li><a href="../Temple.html">Temple</a></li>
+          <li><a href="../TempleInnHomepage.html">Home</a></li>
         </ul>
          <!--Search Bar!-->
           <div class="Search-Container1">
@@ -67,7 +68,42 @@
   </header>
 
 <main>
-    <h1>Templws</h1>
+  <section>
+    <h2>Full Time Missionaries</h2>
+    <div class="MissionaryPics">
+      <img src="../images/Missionary1.jpg" alt="missionary1">
+      <img src="../images/Missionanary2.jpg" alt="missionary2">
+      <img src="../images/Missionary3.jpg" alt="missionary3">
+    </div>
+    <div class="MissionaryPics">
+      <img src="../images/Missionary4.jpg" alt="missionary4">
+      <img src="../images/MIssionary5.jpg" alt="missionary5">
+      <img src="../images/Missionary6.jpg" alt="missionary6">
+    </div>
+    <h2>If you are are Missionary</h2>
+    <p> We provide rooms and accommodations for full time missioanries. These  accommodations include discounts, special rooms and rooms for meetings. We understand the missionary rules and try our best to help keep all the missionaries worthy for entering the temple. Each special room comes with two beds for companions and has two desks for studying. We recommened reserving ahead on time on how many people are in your party, so please fill out the form below. </p>
+  </section>
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>Quick Contact</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
 </main>
 
   <footer>
