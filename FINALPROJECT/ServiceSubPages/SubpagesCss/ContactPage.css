@@ -48,7 +48,7 @@ main {
 }
 
 #contact h3 {
-  color: #F96;
+  color: black;
   display: block;
   font-size: 30px;
   font-weight: 400;
@@ -90,7 +90,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #0CF;
+  background: #575757;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -117,5 +117,14 @@ fieldset {
 #Map {
   margin: 0 auto;
   text-align: center;
+}
+
+footer h2 {
+  color: white;
+}
+
+iframe {
+  width: 600px;
+  height: 450px;
 }
 /*# sourceMappingURL=ContactPage.css.map */

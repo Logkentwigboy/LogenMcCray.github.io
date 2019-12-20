@@ -33,6 +33,7 @@ main {
 
 main h2 {
   font-size: 30px;
+  border-bottom: 3px solid black;
 }
 
 #Temples:hover {
@@ -87,5 +88,9 @@ main h2 {
     grid-gap: 10px;
     padding: 10px;
   }
+}
+
+footer h2 {
+  color: white;
 }
 /*# sourceMappingURL=temple.css.map */

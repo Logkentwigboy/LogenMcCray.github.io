@@ -38,7 +38,7 @@ body {
 }
 
 h3 {
-  color: #d5af34;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -54,8 +54,12 @@ h3 {
 }
 
 h2 {
-  color: #d5af34af;
+  color: #000000af;
   font-size: 20px;
+}
+
+footer h2 {
+  color: white;
 }
 
 header {
@@ -453,7 +457,7 @@ nav ul li:hover ul li {
 }
 
 .content1 input {
-  color: white;
+  color: black;
   background-color: transparent;
   border: none;
 }
@@ -556,7 +560,7 @@ aside {
 
 .HomepageButton input {
   padding: 10px;
-  color: white;
+  color: black;
   background-color: transparent;
   border-style: none;
 }
@@ -572,7 +576,7 @@ aside {
     background: #d5af34;
     width: 300px;
     font-size: 25px;
-    color: white;
+    color: black;
     margin-left: 20px;
     margin-top: 20px;
     height: 60px;
@@ -588,7 +592,7 @@ aside {
     background: #d5af34;
     width: 500px;
     font-size: 25px;
-    color: white;
+    color: #313131;
     height: 60px;
     padding: 20px;
     border-radius: 10px;
@@ -602,7 +606,7 @@ aside {
     background: #d5af34;
     width: 500px;
     font-size: 25px;
-    color: white;
+    color: #313131;
     height: 60px;
     padding: 20px;
     border-radius: 10px;
@@ -618,7 +622,7 @@ aside {
     width: 500px;
     height: 100px;
     font-size: 25px;
-    color: white;
+    color: #313131;
     height: 60px;
     padding: 20px;
     border-radius: 10px;
@@ -632,7 +636,7 @@ aside {
     background: #d5af34;
     width: 500px;
     font-size: 25px;
-    color: white;
+    color: #313131;
     text-align: center;
     margin-top: 20px;
     height: 60px;

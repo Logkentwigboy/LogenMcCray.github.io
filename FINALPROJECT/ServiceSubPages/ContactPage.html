@@ -16,6 +16,7 @@
 
   <header>
     <section id="mobile">
+      <h2>Navigation</h2>
       <div id="content">
 
         <span class="slide">
@@ -32,13 +33,13 @@
               <li><a href="../Temple.html">Temple</a></li>
               <li> <a href="../Reservation.html">Reservation</a></li>
               <li><a href="../Services.html">Services</a></li>
-              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
-              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="FullTimeMissionaries.html">Full-Time Missionaries</a></li>
+              <li><a href="Reception.html">Reception</a></li>
+              <li><a href="ContactPage.html">Contact Page</a></li>
             </ul>
           </div>
         </div>
-        <h1>Lds Temple Inn</h1>
+        <h2>Lds Temple Inn</h2>
       </div>
     </section>
     <div class="wrap">
@@ -47,22 +48,15 @@
         <ul>
           <li><a href="../Services.html">Services</a>
             <ul>
-              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
-              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="Reception.html">Reception</a></li>
+              <li><a href="FullTimeMissionaries.html">Full-Time Missionary</a></li>
+              <li><a href="ContactPage.html">Contact Page</a></li>
             </ul>
           </li>
           <li><a href="../Reservation.html">Reservation</a></li>
           <li><a href="../Temple.html">Temple</a></li>
           <li><a href="../TempleInnHomepage.html">Home</a></li>
         </ul>
-         <!--Search Bar!-->
-          <div class="Search-Container1">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search. . ." name="search">
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-          </div>
       </nav>
     </div>
   </header>
@@ -84,23 +78,34 @@
       <br>
       Email: TempleInnSuite@gmail.com
     </p>
-    </p>
   </section>
   <div class="container">  
-    <form id="contact" action="" method="post">
+    <form id="contact" action="submit" method="post">
       <h3>Quick Contact</h3>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
       <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        <label>
+          Name
+        <input placeholder="Your name" type="text">
+        </label>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        <label>
+          Email
+        <input placeholder="Your Email Address" type="email">
+        </label>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        <label>
+          Phone
+        <input placeholder="Your Phone Number" type="tel">
+        </label>
       </fieldset>
       <fieldset>
-        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        <label>
+          Message us!
+        <textarea placeholder="Type your Message Here...."></textarea>
+          </label>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -108,7 +113,7 @@
     </form>
   </div>
   <div id="Map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13925.071160836793!2d-77.10334225539039!3d38.9820629751297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576193532443!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13925.071160836793!2d-77.10334225539039!3d38.9820629751297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576193532443!5m2!1sen!2sus"></iframe>
   </div>
 </main>
 

@@ -15,7 +15,7 @@ body{
     }
 }
 h3{
-  color:rgb(213, 175, 52);
+  color:rgb(0, 0, 0);
   @include Tablets{
     text-align: center;
   }
@@ -24,8 +24,11 @@ h3{
   }
 }
 h2{
-  color:#d5af34af;
+  color:#000000af;
   font-size: 20px;
+}
+footer h2{
+  color: white;
 }
 header{
   padding:0;
@@ -313,7 +316,7 @@ nav{
       text-align: center;
     }
     input{
-      color: white;
+      color: rgb(0, 0, 0);
       background-color: transparent;
       border:none;
     }
@@ -390,7 +393,7 @@ aside{
 }
 .HomepageButton input{
   padding:10px;
-  color: white;
+  color: rgb(0, 0, 0);
   background-color: transparent;
   border-style: none;
 }
@@ -404,7 +407,7 @@ aside{
     background: #d5af34;
     width: 300px;
     font-size: 25px;
-    color:white;
+    color:black;
     margin-left: 20px;
     margin-top: 20px;
     height: 60px;
@@ -417,7 +420,7 @@ aside{
     background: #d5af34;
     width: 500px;
     font-size: 25px;
-    color:white;
+    color:rgb(49, 49, 49);
     height: 60px;
     padding:20px;
     border-radius: 10px;
@@ -428,7 +431,7 @@ aside{
     background: #d5af34;
     width: 500px;
     font-size: 25px;
-    color:white;
+    color:rgb(49, 49, 49);
     height: 60px;
     padding:20px;
     border-radius: 10px;
@@ -441,7 +444,7 @@ aside{
   width: 500px;
   height: 100px;
   font-size: 25px;
-  color:white;
+  color:rgb(49, 49, 49);
   height: 60px;
   padding:20px;
   border-radius: 10px;
@@ -452,7 +455,7 @@ aside{
   background: #d5af34;
   width: 500px;
   font-size: 25px;
-  color:white;
+  color:rgb(49, 49, 49);
   text-align: center;
   margin-top: 20px;
   height: 60px;

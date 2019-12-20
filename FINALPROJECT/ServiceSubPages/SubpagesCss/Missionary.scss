@@ -60,10 +60,13 @@ main{
 }
 
 #contact h3 {
-	color: #F96;
+	color: rgb(0, 0, 0);
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
+}
+footer h2{
+	color:rgb(255, 255, 255);
 }
 
 #contact h4 {
@@ -103,7 +106,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
+	background:rgb(95, 95, 95);
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;

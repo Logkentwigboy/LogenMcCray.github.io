@@ -16,6 +16,7 @@
 
   <header>
     <section id="mobile">
+      <h2>Navigation</h2>
       <div id="content">
 
         <span class="slide">
@@ -32,13 +33,13 @@
               <li><a href="../Temple.html">Temple</a></li>
               <li> <a href="../Reservation.html">Reservation</a></li>
               <li><a href="../Services.html">Services</a></li>
-              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
-              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionaries</a></li>
+              <li><a href="ServiceSubPages/Reception.html">Reception</a></li>
+              <li><a href="ServiceSubPages/ContactPage.html">Contact Page</a></li>
             </ul>
           </div>
         </div>
-        <h1>Lds Temple Inn</h1>
+        <h2>Lds Temple Inn</h2>
       </div>
     </section>
     <div class="wrap">
@@ -47,26 +48,18 @@
         <ul>
           <li><a href="../Services.html">Services</a>
             <ul>
-              <li><a href="../ServiceSubPages/Reception.html">Reception</a></li>
-              <li><a href="../ServiceSubPages/FullTimeMissionaries.html">Full-Time Missionary</a></li>
-              <li><a href="../ServiceSubPages/ContactPage.html">Contact Page</a></li>
+              <li><a href="Reception.html">Reception</a></li>
+              <li><a href="FullTimeMissionaries.html">Full-Time Missionary</a></li>
+              <li><a href="ContactPage.html">Contact Page</a></li>
             </ul>
           </li>
           <li><a href="../Reservation.html">Reservation</a></li>
           <li><a href="../Temple.html">Temple</a></li>
           <li><a href="../TempleInnHomepage.html">Home</a></li>
         </ul>
-         <!--Search Bar!-->
-          <div class="Search-Container1">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search. . ." name="search">
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-          </div>
       </nav>
     </div>
   </header>
-
 <main>
   <section>
     <h2>Full Time Missionaries</h2>
@@ -84,20 +77,32 @@
     <p> We provide rooms and accommodations for full time missioanries. These  accommodations include discounts, special rooms and rooms for meetings. We understand the missionary rules and try our best to help keep all the missionaries worthy for entering the temple. Each special room comes with two beds for companions and has two desks for studying. We recommened reserving ahead on time on how many people are in your party, so please fill out the form below. </p>
   </section>
   <div class="container">  
-    <form id="contact" action="" method="post">
+    <form id="contact" action="submit" method="post">
       <h3>Quick Contact</h3>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
       <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        <label>
+          Name
+        <input placeholder="Your name" type="text">
+        </label>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        <label>
+          Email
+        <input placeholder="Your Email Address" type="email">
+        </label>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        <label>
+          Phone
+        <input placeholder="Your Phone Number" type="tel">
+        </label>
       </fieldset>
       <fieldset>
-        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        <label>
+          Message us!
+        <textarea placeholder="Type your Message Here...."></textarea>
+          </label>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -106,36 +111,45 @@
   </div>
 </main>
 
-  <footer>
-    <div id="footer-content">
- 
-      <div class="footer-section-about">
-       <h2>Check out Our social Media</h2>
-       <i class="fab fa-google"></i>
-       <br>
-       <i class="fab fa-facebook-square"></i>
-       <br>
-       <i class="fab fa-youtube"></i>
-       <br>
-       <i class="fab fa-instagram"></i>
-      </div>
- 
-      <div class="footer-section-links">
-         <h2>About</h2>
-         <p>This webstie is created on behalf of all the people who want to get closer to God. We want people to be able to enjoy their experience and we want to help enhance their spiritual growth as well.</p>
-      </div>
-      <div class="footer-section-Contact-form">
-         <h2>Send us a message</h2>
-         <form action="ServiceSubPages/ContactPage.html">
-           <input type="submit" value="Go to Contact Page">
-         </form>     </div>
+<footer>
+  <div id="footer-content">
+
+    <div class="footer-section-about">
+     <h2>Check out Our social Media</h2>
+     <i class="fab fa-google"></i>
+     <br>
+     <i class="fab fa-facebook-square"></i>
+     <br>
+     <i class="fab fa-youtube"></i>
+     <br>
+     <i class="fab fa-instagram"></i>
     </div>
-    <div id="footer-buttom">
-     &copy; Final Project | Web Fronted | CIT 230 by Logen McCray
+
+    <div class="footer-section-links">
+       <h2>About</h2>
+       <p>This webstie is created on behalf of all the people who want to get closer to God. We want people to be able to enjoy their experience and we want to help enhance their spiritual growth as well.</p>
     </div>
-   
- 
-   </footer>
+    <div class="footer-section-Contact-form">
+       <h2>Send us a message</h2>
+       <form action="ServiceSubPages/ContactPage.html">
+         <input type="submit" value="Go to Contact Page">
+       </form>   
+       <div class="Search-Container2">
+         <form action="/action_page.php">
+           <label>SearchBar
+           <input type="text"  placeholder="Search. . .">
+           </label>
+           <button id="text"><i class="fas fa-search"></i>Here</button>
+         </form>
+  </div>
+     </div>
+        <!--Search Bar!-->
+  <div id="footer-buttom">
+   &copy; Final Project | Web Fronted | CIT 230 by Logen McCray
+  </div>
+ </div>
+
+ </footer>
    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
    <script>
      function openSlideMenu() {
